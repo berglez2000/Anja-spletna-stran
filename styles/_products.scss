@@ -1,0 +1,213 @@
+#products{
+    padding: 10vh 5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    .product{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            border: 2px black solid;
+            border-radius: 3px;
+        }
+        a{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: whitesmoke;
+            text-decoration: none;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 40px;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            transition: all 0.5s ease;
+            font-family: 'Amatic SC', cursive;
+            &:hover{
+                opacity: 1;
+                transition: all 0.5s ease;
+            }
+        }
+        #child-bag-img, .child-bag-link{
+            width: 450px;
+            height: 338px;
+        }
+        #dig-foto-img, .dig-foto-link{
+            width: 350px;
+            height: 420px;
+        }
+        #pillow-img, .pillow-link{
+            width: 350px;
+            height: 438px;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px){
+    #products{
+        .product{
+            #dig-foto-img, .dig-foto-link{
+                width: 300px;
+                height: 360px;
+            }
+            #child-bag-img, .child-bag-link{
+                width: 400px;
+                height: 300px;
+            }
+            #pillow-img, .pillow-link{
+                width: 300px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1115px){
+    #products{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    #products{
+        .product{
+            #dig-foto-img, .dig-foto-link{
+                width: 250px;
+                height: 300px;
+            }
+            #child-bag-img, .child-bag-link{
+                width: 313px;
+                height: 250px;
+            }
+            #pillow-img, .pillow-link{
+                width: 250px;
+                height: 313px;
+            }
+            a{
+                font-size: 34px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 612px){
+    #products{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        .product{
+            #child-bag-img, .child-bag-link{
+                width: 450px;
+                height: 338px;
+            }
+            #dig-foto-img, .dig-foto-link{
+                width: 350px;
+                height: 420px;
+            }
+            #pillow-img, .pillow-link{
+                width: 350px;
+                height: 438px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 508px){
+    #products{
+        .product{
+            #child-bag-img, .child-bag-link{
+                width: 400px;
+                height: 300px;
+            }
+            #dig-foto-img, .dig-foto-link{
+                width: 300px;
+                height: 360px;
+            }
+            #pillow-img, .pillow-link{
+                width: 300px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 431px){
+    #products{
+        .product{
+            #child-bag-img, .child-bag-link{
+                width: 325px;
+                height: 260px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px){
+    #products{
+        .product{
+            #child-bag-img, .child-bag-link{
+                width: 280px;
+                height: 210px;
+            }
+            #dig-foto-img, .dig-foto-link{
+                width: 260px;
+                height: 312px;
+            }
+            #pillow-img, .pillow-link{
+                width: 280px;
+                height: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px){
+    #products{
+        .product{
+            #child-bag-img, .child-bag-link{
+                width: 250px;
+                height: 188px;
+            }
+            #dig-foto-img, .dig-foto-link{
+                width: 260px;
+                height: 312px;
+            }
+            #pillow-img, .pillow-link{
+                width: 250px;
+                height: 300px;
+            }
+            a{
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 275px){
+    #products{
+        .product{
+            #child-bag-img, .child-bag-link{
+                width: 230px;
+                height: 173x;
+            }
+            #dig-foto-img, .dig-foto-link{
+                width: 230px;
+                height: 276px;
+            }
+            #pillow-img, .pillow-link{
+                width: 230px;
+                height: 288px;
+            }
+        }
+    }
+}

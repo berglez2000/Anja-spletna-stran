@@ -1,0 +1,162 @@
+/* variables */
+$lavanda: rgb(152, 143, 156);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(224, 210, 193);
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    .image-gallery{
+        display: grid;
+        grid-template-rows: 70% 30%;
+        grid-template-columns: 100%;
+        .large-image{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            img{
+                width: 700px;
+                height: 525px;
+            }
+            i{
+                cursor: pointer;
+                height: 525px;
+                display: flex;
+                align-items: center;
+                font-size: 2rem;
+                color: whitesmoke;
+                transition: all 0.5s ease;
+                &:hover{
+                    color: grey;
+                    transition: all 0.5s ease;
+                }
+            }
+            i.fas.fa-arrow-left{
+                transform: translateX(2rem);
+            }
+            i.fas.fa-arrow-right{
+                transform: translateX(-2rem);
+            }
+        }
+        .small-images{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            img{
+                width: 120px;
+                height: 90px;
+                margin: 10px 5px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover{
+                    transition: all 0.3s ease;
+                    transform: scale(1.075);
+                }
+            }
+            .active{
+                border: 3px green solid;
+                border-radius: 3px;
+            }
+        }
+    }
+
+    .about-product{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .title{
+            text-align: start;
+        }
+        .product-description{
+            width: 60%;
+            text-align: center;
+        }
+        .colors-section{
+            display: flex;
+            flex-direction: column;
+            h3{
+                text-align: center;
+                font-size: 2rem;
+            }
+            .colors{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .color{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: 10px;
+                    margin-right: 40%;
+                    .color-show{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 10rem;
+                        margin: 10px;
+                    }
+                    #lavanda{
+                        background-color: $lavanda;
+                    }
+                }
+            }
+        }
+        .price-sect{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 2rem;
+        }
+        .checks{
+            .check{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 10px;
+                i{
+                    margin: 10px;
+                    font-size: 1.5rem;
+                    color: green;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+        .shop{
+            display: flex;
+            justify-content: flex-start;
+            height: 10vh;
+            padding: 10px;
+            section{
+                margin: 0 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                a{
+                    color: black;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        transition: all 0.3s ease;
+                        color: #3d07d1;
+                    }
+                }
+            }
+        }
+    }
+    
+}
