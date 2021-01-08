@@ -1,7 +1,5 @@
 let imagesList = [
     "otroski-nahrbtnik",
-    "dig-foto",
-    "pillow"
 ];
 let currentPhoto = 0;
 
@@ -15,7 +13,7 @@ const arrowbackward = document.querySelector("#arrow-backward");
 
 // Functions
 const slideImage = () => {
-    if (currentPhoto > imagesList.length - 1){
+    if (currentPhoto > imagesList.length){
         currentPhoto = 0;
     } else if (currentPhoto < 0){
         currentPhoto = 2;
