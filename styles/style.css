@@ -139,24 +139,6 @@ body {
 
 #home .home-box-4 .buttons button {
   margin: 0 10px;
-  min-width: 7rem;
-  min-height: 2rem;
-  font-size: 18px;
-  background-color: whitesmoke;
-  border: 1px black solid;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-#home .home-box-4 .buttons button:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  border: 1px whitesmoke solid;
-  background: black;
-  color: whitesmoke;
 }
 
 @media screen and (max-width: 885px) {

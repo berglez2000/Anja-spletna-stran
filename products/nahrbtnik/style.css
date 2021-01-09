@@ -8,7 +8,7 @@
 
 body {
   background: #e0d2c1;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60% 40%;
@@ -127,6 +127,7 @@ body .about-product {
 
 body .about-product .title {
   text-align: start;
+  text-transform: uppercase;
 }
 
 body .about-product .product-description {

@@ -19,8 +19,8 @@ const main = (e) => {
     const gsapAnimations = () => {
         let tl = gsap.timeline();
         tl.from(logo, {duration: 1.5, opacity: 0, x: -50, y: -50});
-        tl.from(logoText, {duration: 1, opacity: 0, stagger: 0.1});
-        tl.from(shortText, {duration: 1, opacity: 0});
+        tl.from(logoText, {duration: 0.5, opacity: 0, stagger: 0.1});
+        tl.from(shortText, {duration: 0.5, opacity: 0});
         tl.from(btns, {duration: 0.5, opacity: 0, stagger: 0.25});
         tl.from(links, {duration: 0.5, opacity: 0, stagger: 0.25, y: 50});
         tl.to(homePage, {duration: 1, minHeight: "85vh"});
@@ -35,3 +35,6 @@ const main = (e) => {
 
 // Event listeners
 window.addEventListener("load", main);
+document.body.addEventListener("click", () => {
+    console.log(window.innerWidth);
+});
