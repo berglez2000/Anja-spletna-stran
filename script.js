@@ -35,6 +35,3 @@ const main = (e) => {
 
 // Event listeners
 window.addEventListener("load", main);
-document.body.addEventListener("click", () => {
-    console.log(window.innerWidth);
-})

@@ -41,41 +41,35 @@
         transition: all 0.5s ease;
       }
     }
-    #child-bag-img,
-    .child-bag-link {
-      width: 450px;
-      height: 338px;
-    }
-    #dig-foto-img,
-    .dig-foto-link {
-      width: 350px;
-      height: 420px;
-    }
-    #pillow-img,
-    .pillow-link {
+  }
+  .standing {
+    * {
       width: 350px;
       height: 438px;
+    }
+  }
+
+  .lying {
+    * {
+      width: 450px;
+      height: 338px;
     }
   }
 }
 
 @media screen and (max-width: 1280px) {
   #products {
-    .product {
-      #dig-foto-img,
-      .dig-foto-link {
-        width: 300px;
-        height: 360px;
-      }
-      #child-bag-img,
-      .child-bag-link {
-        width: 400px;
-        height: 300px;
-      }
-      #pillow-img,
-      .pillow-link {
+    .standing {
+      * {
         width: 300px;
         height: 400px;
+      }
+    }
+
+    .lying {
+      * {
+        width: 400px;
+        height: 300px;
       }
     }
   }
@@ -85,53 +79,76 @@
   #products {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-  }
-}
+    .standing {
+      * {
+        width: 400px;
+        height: 533px;
+      }
+    }
 
-@media screen and (max-width: 768px) {
-  #products {
-    .product {
-      #dig-foto-img,
-      .dig-foto-link {
-        width: 250px;
-        height: 300px;
-      }
-      #child-bag-img,
-      .child-bag-link {
-        width: 313px;
-        height: 250px;
-      }
-      #pillow-img,
-      .pillow-link {
-        width: 250px;
-        height: 313px;
-      }
-      a {
-        font-size: 34px;
+    .lying {
+      * {
+        width: 533px;
+        height: 400px;
       }
     }
   }
 }
 
-@media screen and (max-width: 612px) {
+@media screen and (max-width: 1000px) {
+  #products {
+    .standing {
+      * {
+        width: 350px;
+        height: 467px;
+      }
+    }
+
+    .lying {
+      * {
+        width: 467px;
+        height: 350px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 867px) {
+  #products {
+    .standing {
+      * {
+        width: 300px;
+        height: 400px;
+      }
+    }
+
+    .lying {
+      * {
+        width: 400px;
+        height: 300px;
+      }
+    }
+    .product {
+      font-size: 34px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
   #products {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    .product {
-      #child-bag-img,
-      .child-bag-link {
-        width: 450px;
-        height: 338px;
-      }
-      #dig-foto-img,
-      .dig-foto-link {
-        width: 350px;
-        height: 420px;
-      }
-      #pillow-img,
-      .pillow-link {
+    .standing {
+      * {
         width: 350px;
         height: 438px;
+      }
+    }
+
+    .lying {
+      * {
+        width: 450px;
+        height: 338px;
       }
     }
   }
@@ -139,21 +156,22 @@
 
 @media screen and (max-width: 508px) {
   #products {
-    .product {
-      #child-bag-img,
-      .child-bag-link {
+    .standing {
+      * {
+        width: 300px;
+        height: 400px;
+      }
+    }
+
+    .lying {
+      * {
         width: 400px;
         height: 300px;
       }
-      #dig-foto-img,
-      .dig-foto-link {
-        width: 300px;
-        height: 360px;
-      }
-      #pillow-img,
-      .pillow-link {
-        width: 300px;
-        height: 400px;
+    }
+    .product {
+      a {
+        font-size: 30px;
       }
     }
   }
@@ -161,11 +179,10 @@
 
 @media screen and (max-width: 431px) {
   #products {
-    .product {
-      #child-bag-img,
-      .child-bag-link {
-        width: 325px;
-        height: 260px;
+    .lying {
+      * {
+        width: 350px;
+        height: 263px;
       }
     }
   }
@@ -173,21 +190,17 @@
 
 @media screen and (max-width: 350px) {
   #products {
-    .product {
-      #child-bag-img,
-      .child-bag-link {
+    .standing {
+      * {
+        width: 280px;
+        height: 373px;
+      }
+    }
+
+    .lying {
+      * {
         width: 280px;
         height: 210px;
-      }
-      #dig-foto-img,
-      .dig-foto-link {
-        width: 260px;
-        height: 312px;
-      }
-      #pillow-img,
-      .pillow-link {
-        width: 280px;
-        height: 350px;
       }
     }
   }
@@ -195,22 +208,20 @@
 
 @media screen and (max-width: 300px) {
   #products {
-    .product {
-      #child-bag-img,
-      .child-bag-link {
+    .standing {
+      * {
+        width: 250px;
+        height: 333px;
+      }
+    }
+
+    .lying {
+      * {
         width: 250px;
         height: 188px;
       }
-      #dig-foto-img,
-      .dig-foto-link {
-        width: 260px;
-        height: 312px;
-      }
-      #pillow-img,
-      .pillow-link {
-        width: 250px;
-        height: 300px;
-      }
+    }
+    .product {
       a {
         font-size: 28px;
       }
@@ -218,23 +229,19 @@
   }
 }
 
-@media screen and (max-width: 275px) {
+@media screen and (max-width: 285px) {
   #products {
-    .product {
-      #child-bag-img,
-      .child-bag-link {
-        width: 230px;
-        height: 173x;
+    .standing {
+      * {
+        width: 240px;
+        height: 320px;
       }
-      #dig-foto-img,
-      .dig-foto-link {
-        width: 230px;
-        height: 276px;
-      }
-      #pillow-img,
-      .pillow-link {
-        width: 230px;
-        height: 288px;
+    }
+
+    .lying {
+      * {
+        width: 240px;
+        height: 180px;
       }
     }
   }
