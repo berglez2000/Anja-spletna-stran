@@ -8,10 +8,15 @@ const burger = document.querySelector(".burger");
 const bars = document.querySelectorAll(".burger div");
 const homePage = document.querySelector("#home");
 const productBtn = document.querySelector(".product-btn")
-
+let loaded = false;
 
 // Main Function
 const main = (e) => {
+    loaded = true;
+    if (loaded){
+        const spinner = document.querySelector(".loader");
+        spinner.classList.add("hide");
+    }
     e.preventDefault();
     // FUNCTIONS
 

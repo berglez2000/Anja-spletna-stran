@@ -1,35 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .instagram {
-    i{
-        color: #fd941d;
-    }
+  i {
+    color: #fd941d;
+  }
 }
 
-.facebook{
-    i{
-        color: #3b5998 ;
-    }
+.facebook {
+  i {
+    color: #3b5998;
+  }
 }
 .mail {
-    i{
-        color: #4fd3d3;
-    }
+  i {
+    color: #4fd3d3;
+  }
+}
+
+/* Spinners */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader.hide {
+  display: none;
+  pointer-events: none;
 }
 
 /* Import */
-@import './home';
-@import './products';
+@import "./home";
+@import "./products";
