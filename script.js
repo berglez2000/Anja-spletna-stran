@@ -8,6 +8,7 @@ const burger = document.querySelector(".burger");
 const bars = document.querySelectorAll(".burger div");
 const homePage = document.querySelector("#home");
 const productBtn = document.querySelector(".product-btn")
+const products = document.querySelectorAll(".product");
 let loaded = false;
 
 // Main Function
@@ -22,19 +23,21 @@ const main = (e) => {
 
     // GSAP animations
     const gsapAnimations = () => {
+        gsap.registerPlugin(ScrollTrigger);
         let tl = gsap.timeline();
-        tl.from(logo, {duration: 1.5, opacity: 0, x: -50, y: -50});
-        tl.from(logoText, {duration: 0.5, opacity: 0, stagger: 0.1});
-        tl.from(shortText, {duration: 0.5, opacity: 0});
-        tl.from(btns, {duration: 0.5, opacity: 0, stagger: 0.25});
-        tl.from(links, {duration: 0.5, opacity: 0, stagger: 0.25, y: 50});
-        tl.from(homePage, {duration: 1, minHeight: "100vh"});
+        // Home animations
+        tl.from(logo, {scrollTrigger: "#home", duration: 1.5, opacity: 0, x: -50, y: -50});
+        tl.from(logoText, {scrollTrigger: "#home", duration: 0.5, opacity: 0, stagger: 0.1});
+        tl.from(shortText, {scrollTrigger: "#home", duration: 0.5, opacity: 0, y: 20});
+        tl.from(btns, {scrollTrigger: "#home", duration: 0.5, opacity: 0, stagger: 0.25});
+        tl.from(links, {scrollTrigger: "#home", duration: 0.5, opacity: 0, stagger: 0.25, y: 50});
+
+        // products aniamtion
+        gsap.from(products, {scrollTrigger: "#products", duration: 2, opacity: 0, stagger: 0.15});
     }
 
     // Calling functions
-    if (window.scrollY < 350){
-        gsapAnimations();
-    }
+    gsapAnimations();
 }
 
 
