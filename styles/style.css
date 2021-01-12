@@ -225,13 +225,15 @@ body {
 }
 
 #products {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.711)), to(#eeeeee));
+  background: linear-gradient(rgba(0, 0, 0, 0.711), #eeeeee);
   padding: 10vh 5em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -239,10 +241,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../img/ozadje.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #products .product {
@@ -321,8 +319,8 @@ body {
   #products {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
   }
   #products .standing * {
     width: 400px;
@@ -363,8 +361,8 @@ body {
   #products {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
   }
   #products .standing * {
     width: 350px;
