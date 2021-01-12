@@ -6,8 +6,9 @@
   grid-gap: 10px;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/abstract-background-3.jpg);
+  background-image: url(../img/ozadje.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   .product {
     width: 100%;
@@ -136,6 +137,9 @@
 
 @media screen and (max-width: 768px) {
   #products {
+    background-image: url(../img/ozadje\ –\ kopija.jpg);
+    background-size: cover;
+    background-position: center;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     .standing {

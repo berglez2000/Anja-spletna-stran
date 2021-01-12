@@ -1,4 +1,5 @@
 let currentPhoto = 0;
+let photosNum = 4;
 
 // Query Selectors
 const largeImage = document.querySelector("#show-img");
@@ -10,34 +11,14 @@ const arrowbackward = document.querySelector("#arrow-backward");
 
 // Functions
 const slideImage = () => {
-  if (currentPhoto > 2){
+  if (currentPhoto > photosNum){
     currentPhoto = 0;
   } else if (currentPhoto < 0){
-    currentPhoto = 2;
+    currentPhoto = photosNum;
   }
 
   largeImage.src = `img/img-${currentPhoto}.jpg`;
 }
-
-
-const changeImages = (img) => {
-  let source = img.src;
-  source = source.replace("-x-small", "");
-  largeImage.src = source;
-  
-  const setCurrentPhoto = () => {
-      if (largeImage.src.includes(imagesList[0])){
-          return currentPhoto = 0;
-      } else if (largeImage.src.includes(imagesList[1])){
-          return currentPhoto = 1;
-      } else if (largeImage.src.includes(imagesList[2])){
-          return currentPhoto = 2;
-      }
-  }
-
-  setCurrentPhoto();
-}
-
 
 
 // Event Listeners
@@ -51,10 +32,16 @@ arrowbackward.addEventListener("click", () => {
   slideImage();
 });
 
+const changeImages = (img) => {
+  let num = img.alt;
+
+  currentPhoto = num;
+  return largeImage.src = `img/img-${num}.jpg`;
+}
 
 // For each loop
 smallImages.forEach(img => {
   img.addEventListener("click", () => {
-      changeImages(img);
+    changeImages(img);
   });
 });

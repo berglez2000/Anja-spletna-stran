@@ -28,7 +28,7 @@ const main = (e) => {
         tl.from(shortText, {duration: 0.5, opacity: 0});
         tl.from(btns, {duration: 0.5, opacity: 0, stagger: 0.25});
         tl.from(links, {duration: 0.5, opacity: 0, stagger: 0.25, y: 50});
-        tl.to(homePage, {duration: 1, minHeight: "85vh"});
+        tl.from(homePage, {duration: 1, minHeight: "100vh"});
     }
 
     // Calling functions
