@@ -2,7 +2,7 @@
   padding: 10vh 5em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
   justify-content: center;
   align-items: center;
@@ -79,7 +79,7 @@
 @media screen and (max-width: 1115px) {
   #products {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     .standing {
       * {
         width: 400px;
@@ -141,7 +141,7 @@
     background-size: cover;
     background-position: center;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     .standing {
       * {
         width: 350px;

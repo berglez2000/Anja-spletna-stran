@@ -39,13 +39,9 @@ body .image-gallery .large-image {
           align-items: flex-end;
 }
 
-body .image-gallery .large-image img.lying {
-  width: 700px;
-  height: 525px;
-}
-
-body .image-gallery .large-image img.standing {
-  height: 600px;
+body .image-gallery .large-image img {
+  max-height: 600px;
+  max-width: 750px;
 }
 
 body .image-gallery .large-image i {
@@ -88,9 +84,9 @@ body .image-gallery .small-images {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .image-gallery .small-images img {
