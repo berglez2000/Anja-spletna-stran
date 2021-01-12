@@ -87,7 +87,7 @@ body {
     }
     .product-description {
       width: 80%;
-      text-align: center;
+      font-size: 22px;
     }
     .colors-section {
       display: flex;
@@ -121,7 +121,10 @@ body {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      font-size: 2rem;
+      font-size: 1.5rem;
+      strong {
+        font-size: 2rem;
+      }
     }
     .checks {
       .check {
