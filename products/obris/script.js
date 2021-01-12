@@ -1,5 +1,5 @@
 let currentPhoto = 0;
-let photosNum = 1;
+let photosNum = 4;
 
 // Query Selectors
 const largeImage = document.querySelector("#show-img");
