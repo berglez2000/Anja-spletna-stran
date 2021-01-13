@@ -184,7 +184,6 @@ body .about-product .colors-section .colors .color {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 10px;
-  margin-right: 40%;
 }
 
 body .about-product .colors-section .colors .color .color-show {
@@ -192,6 +191,18 @@ body .about-product .colors-section .colors .color .color-show {
   height: 50px;
   border-radius: 10rem;
   margin: 10px;
+}
+
+body .about-product .colors-section .colors .color #bela {
+  background: whitesmoke;
+}
+
+body .about-product .colors-section .colors .color #bez {
+  background: beige;
+}
+
+body .about-product .colors-section .colors .color #crna {
+  background: black;
 }
 
 body .about-product .price-sect {

@@ -7,9 +7,9 @@
 body {
   font-family: "Montserrat", sans-serif;
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
   grid-template-rows: 1fr;
-  height: 100vh;
+  min-height: 100vh;
   .image-gallery {
     display: grid;
     grid-template-rows: 80% 20%;
@@ -88,33 +88,6 @@ body {
     .product-description {
       width: 80%;
       font-size: 22px;
-    }
-    .colors-section {
-      display: flex;
-      flex-direction: column;
-      h3 {
-        text-align: center;
-        font-size: 2rem;
-      }
-      .colors {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .color {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-          margin: 10px;
-          margin-right: 40%;
-          .color-show {
-            width: 50px;
-            height: 50px;
-            border-radius: 10rem;
-            margin: 10px;
-          }
-        }
-      }
     }
     .price-sect {
       width: 100%;

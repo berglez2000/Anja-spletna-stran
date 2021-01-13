@@ -144,6 +144,21 @@ body .about-product .title {
 body .about-product .product-description {
   width: 80%;
   text-align: center;
+  font-size: 22px;
+}
+
+body .about-product .product-description .sizes {
+  margin-top: 10px;
+  text-align: left;
+}
+
+body .about-product .product-description .sizes h2 {
+  font-size: 26px;
+}
+
+body .about-product .product-description .sizes li {
+  list-style-type: none;
+  font-size: 20px;
 }
 
 body .about-product .colors-section {
@@ -214,6 +229,10 @@ body .about-product .price-sect {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2rem;
+}
+
+body .about-product .checks {
+  margin-left: 20%;
 }
 
 body .about-product .checks .check {

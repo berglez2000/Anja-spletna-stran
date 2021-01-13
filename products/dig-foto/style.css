@@ -9,11 +9,11 @@ body {
   font-family: "Montserrat", sans-serif;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body .image-gallery {
@@ -143,58 +143,6 @@ body .about-product .title {
 body .about-product .product-description {
   width: 80%;
   font-size: 22px;
-}
-
-body .about-product .colors-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body .about-product .colors-section h3 {
-  text-align: center;
-  font-size: 2rem;
-}
-
-body .about-product .colors-section .colors {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .about-product .colors-section .colors .color {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 10px;
-  margin-right: 40%;
-}
-
-body .about-product .colors-section .colors .color .color-show {
-  width: 50px;
-  height: 50px;
-  border-radius: 10rem;
-  margin: 10px;
 }
 
 body .about-product .price-sect {
