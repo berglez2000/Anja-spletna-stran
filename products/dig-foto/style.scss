@@ -14,18 +14,18 @@ body {
     display: grid;
     grid-template-rows: 80% 20%;
     grid-template-columns: 100%;
+    .title {
+      display: none;
+    }
     .large-image {
       width: 100%;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      img.lying {
-        width: 700px;
-        height: 525px;
-      }
-      img.standing {
-        height: 600px;
+      img {
+        max-width: 600px;
+        max-height: 600px;
       }
       i {
         cursor: pointer;
@@ -131,6 +131,231 @@ body {
           &:hover {
             transition: all 0.3s ease;
             color: #3d07d1;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+  body {
+    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    padding: 2rem 5rem;
+    .image-gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .title {
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+      .small-images {
+        margin-bottom: 30px;
+      }
+    }
+    .about-product {
+      .title {
+        display: none;
+      }
+      .product-description {
+        text-align: center;
+        width: 100%;
+      }
+      .price-sect {
+        margin: 10px 0;
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+      .shop {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    .large-image {
+      img {
+        max-width: 80%;
+      }
+    }
+    .small-images {
+      img {
+        max-width: 75px;
+        max-height: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    .image-gallery {
+      .title {
+        font-size: 1.75rem;
+      }
+      .large-image {
+        height: 510px;
+        max-width: 100%;
+        img {
+          width: 100%;
+        }
+        i {
+          height: 510px;
+        }
+      }
+      .small-images {
+        img {
+          max-width: 60px;
+          max-height: 80px;
+        }
+      }
+    }
+    .about-product {
+      .shop {
+        a {
+          font-size: 16px;
+        }
+        i {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 4rem 3rem;
+    .image-gallery {
+      .large-image {
+        height: 533px;
+        img {
+          width: 400px;
+          height: 533px;
+        }
+        i {
+          height: 533px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    padding: 30px 15px;
+    .image-gallery {
+      .large-image {
+        height: 466px;
+        img {
+          width: 350px;
+          height: 466px;
+        }
+        i {
+          height: 466px;
+        }
+      }
+    }
+    .about-product {
+      .product-description {
+        p {
+          font-size: 18px;
+        }
+      }
+      .price-sect {
+        p {
+          font-size: 16px;
+          strong {
+            font-size: 22px;
+          }
+        }
+      }
+      .checks {
+        .check {
+          i,
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 355px) {
+  body {
+    .image-gallery {
+      .title {
+        font-size: 1.35rem;
+      }
+      .large-image {
+        height: 400px;
+        img {
+          width: 300px;
+          height: 400px;
+        }
+        i {
+          height: 400px;
+          font-size: 1.5rem;
+        }
+      }
+      .small-images {
+        img {
+          max-width: 40px;
+          max-height: 53px;
+        }
+      }
+    }
+    .about-product {
+      .shop {
+        h3 {
+          font-size: 16px;
+        }
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 305px) {
+  body {
+    .image-gallery {
+      .large-image {
+        height: 333px;
+        width: 100%;
+        img {
+          width: 250px;
+          height: 333px;
+        }
+        i {
+          height: 333px;
+        }
+      }
+    }
+    .about-product {
+      .product-description {
+        p {
+          font-size: 16px;
+        }
+      }
+      .price-sect {
+        p {
+          strong {
+            font-size: 1.15rem;
           }
         }
       }

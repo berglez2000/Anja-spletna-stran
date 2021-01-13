@@ -25,6 +25,10 @@ body .image-gallery {
       grid-template-columns: 100%;
 }
 
+body .image-gallery .title {
+  display: none;
+}
+
 body .image-gallery .large-image {
   width: 100%;
   height: 100%;
@@ -39,13 +43,9 @@ body .image-gallery .large-image {
           align-items: flex-end;
 }
 
-body .image-gallery .large-image img.lying {
-  width: 700px;
-  height: 525px;
-}
-
-body .image-gallery .large-image img.standing {
-  height: 600px;
+body .image-gallery .large-image img {
+  max-width: 600px;
+  max-height: 600px;
 }
 
 body .image-gallery .large-image i {
@@ -221,5 +221,186 @@ body .about-product .shop section a:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #3d07d1;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  body {
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    padding: 2rem 5rem;
+  }
+  body .image-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .image-gallery .title {
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  body .image-gallery .small-images {
+    margin-bottom: 30px;
+  }
+  body .about-product .title {
+    display: none;
+  }
+  body .about-product .product-description {
+    text-align: center;
+    width: 100%;
+  }
+  body .about-product .price-sect {
+    margin: 10px 0;
+    text-align: center;
+  }
+  body .about-product .price-sect p {
+    width: 100%;
+  }
+  body .about-product .shop {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .large-image img {
+    max-width: 80%;
+  }
+  body .small-images img {
+    max-width: 75px;
+    max-height: 100px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body .image-gallery .title {
+    font-size: 1.75rem;
+  }
+  body .image-gallery .large-image {
+    height: 510px;
+    max-width: 100%;
+  }
+  body .image-gallery .large-image img {
+    width: 100%;
+  }
+  body .image-gallery .large-image i {
+    height: 510px;
+  }
+  body .image-gallery .small-images img {
+    max-width: 60px;
+    max-height: 80px;
+  }
+  body .about-product .shop a {
+    font-size: 16px;
+  }
+  body .about-product .shop i {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 4rem 3rem;
+  }
+  body .image-gallery .large-image {
+    height: 533px;
+  }
+  body .image-gallery .large-image img {
+    width: 400px;
+    height: 533px;
+  }
+  body .image-gallery .large-image i {
+    height: 533px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    padding: 30px 15px;
+  }
+  body .image-gallery .large-image {
+    height: 466px;
+  }
+  body .image-gallery .large-image img {
+    width: 350px;
+    height: 466px;
+  }
+  body .image-gallery .large-image i {
+    height: 466px;
+  }
+  body .about-product .product-description p {
+    font-size: 18px;
+  }
+  body .about-product .price-sect p {
+    font-size: 16px;
+  }
+  body .about-product .price-sect p strong {
+    font-size: 22px;
+  }
+  body .about-product .checks .check i,
+  body .about-product .checks .check p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  body .image-gallery .title {
+    font-size: 1.35rem;
+  }
+  body .image-gallery .large-image {
+    height: 400px;
+  }
+  body .image-gallery .large-image img {
+    width: 300px;
+    height: 400px;
+  }
+  body .image-gallery .large-image i {
+    height: 400px;
+    font-size: 1.5rem;
+  }
+  body .image-gallery .small-images img {
+    max-width: 40px;
+    max-height: 53px;
+  }
+  body .about-product .shop h3 {
+    font-size: 16px;
+  }
+  body .about-product .shop a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 305px) {
+  body .image-gallery .large-image {
+    height: 333px;
+    width: 100%;
+  }
+  body .image-gallery .large-image img {
+    width: 250px;
+    height: 333px;
+  }
+  body .image-gallery .large-image i {
+    height: 333px;
+  }
+  body .about-product .product-description p {
+    font-size: 16px;
+  }
+  body .about-product .price-sect p strong {
+    font-size: 1.15rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
