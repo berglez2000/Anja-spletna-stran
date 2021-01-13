@@ -25,6 +25,10 @@ body .image-gallery {
       grid-template-columns: 100%;
 }
 
+body .image-gallery .title {
+  display: none;
+}
+
 body .image-gallery .large-image {
   width: 100%;
   height: 100%;
@@ -138,7 +142,7 @@ body .about-product .title {
 
 body .about-product .product-description {
   width: 80%;
-  text-align: center;
+  text-align: start;
   font-size: 20px;
 }
 
@@ -266,5 +270,89 @@ body .about-product .shop section a:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #3d07d1;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+  body .image-gallery {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .image-gallery .title {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+  }
+  body .image-gallery .large-image img {
+    max-height: 600px;
+    max-width: 800px;
+  }
+  body .about-product {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .about-product .title {
+    display: none;
+  }
+  body .about-product .product-description {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+  }
+  body .about-product .price-sect p {
+    text-align: center;
+    width: 100%;
+  }
+  body .about-product .checks {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .about-product .shop a,
+  body .about-product .shop i {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body .image-gallery .large-image img {
+    max-width: 750px;
+    max-height: 600px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
