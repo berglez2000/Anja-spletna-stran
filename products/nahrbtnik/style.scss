@@ -92,48 +92,47 @@ body {
       width: 80%;
       text-align: center;
       font-size: 22px;
-      .sizes {
-        margin-top: 10px;
-        text-align: left;
-        h2 {
-          font-size: 26px;
-        }
-        li {
-          list-style-type: none;
-          font-size: 20px;
-        }
-      }
     }
     .color-sizes {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-    }
-    .colors-section {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      h3 {
-        text-align: center;
-        font-size: 2rem;
-      }
-      .colors {
+      .colors-section {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        .color {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        h3 {
+          text-align: center;
+          font-size: 2rem;
+        }
+        .colors {
           display: flex;
           justify-content: center;
           align-items: center;
-          flex-direction: column;
-          margin: 10px;
-          .color-show {
-            width: 50px;
-            height: 50px;
-            border-radius: 10rem;
+          .color {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             margin: 10px;
-            background-color: $lavanda;
+            .color-show {
+              width: 50px;
+              height: 50px;
+              border-radius: 10rem;
+              margin: 10px;
+              background-color: $lavanda;
+            }
           }
+        }
+      }
+      .sizes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        h3 {
+          font-size: 2rem;
         }
       }
     }
@@ -143,6 +142,7 @@ body {
       justify-content: flex-start;
       align-items: center;
       font-size: 2rem;
+      margin: 30px 0;
     }
     .checks {
       margin-left: 20%;

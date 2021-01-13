@@ -147,20 +147,6 @@ body .about-product .product-description {
   font-size: 22px;
 }
 
-body .about-product .product-description .sizes {
-  margin-top: 10px;
-  text-align: left;
-}
-
-body .about-product .product-description .sizes h2 {
-  font-size: 26px;
-}
-
-body .about-product .product-description .sizes li {
-  list-style-type: none;
-  font-size: 20px;
-}
-
 body .about-product .color-sizes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,7 +159,7 @@ body .about-product .color-sizes {
           align-items: center;
 }
 
-body .about-product .colors-section {
+body .about-product .color-sizes .colors-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,14 +170,17 @@ body .about-product .colors-section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-body .about-product .colors-section h3 {
+body .about-product .color-sizes .colors-section h3 {
   text-align: center;
   font-size: 2rem;
 }
 
-body .about-product .colors-section .colors {
+body .about-product .color-sizes .colors-section .colors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +192,7 @@ body .about-product .colors-section .colors {
           align-items: center;
 }
 
-body .about-product .colors-section .colors .color {
+body .about-product .color-sizes .colors-section .colors .color {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,12 +209,30 @@ body .about-product .colors-section .colors .color {
   margin: 10px;
 }
 
-body .about-product .colors-section .colors .color .color-show {
+body .about-product .color-sizes .colors-section .colors .color .color-show {
   width: 50px;
   height: 50px;
   border-radius: 10rem;
   margin: 10px;
   background-color: #988f9c;
+}
+
+body .about-product .color-sizes .sizes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+body .about-product .color-sizes .sizes h3 {
+  font-size: 2rem;
 }
 
 body .about-product .price-sect {
@@ -240,6 +247,7 @@ body .about-product .price-sect {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2rem;
+  margin: 30px 0;
 }
 
 body .about-product .checks {
