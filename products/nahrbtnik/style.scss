@@ -104,11 +104,15 @@ body {
         }
       }
     }
+    .color-sizes {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
     .colors-section {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-left: 25%;
       h3 {
         text-align: center;
         font-size: 2rem;
@@ -167,9 +171,13 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        h3 {
+          font-size: 22px;
+        }
         a {
           color: black;
           transition: all 0.3s ease;
+          font-size: 20px;
           &:hover {
             transition: all 0.3s ease;
             color: #3d07d1;

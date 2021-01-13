@@ -111,10 +111,10 @@ body {
             margin: 10px;
           }
           #bela {
-            background: whitesmoke;
+            background: rgb(245, 239, 239);
           }
           #bez {
-            background: beige;
+            background: rgb(214, 203, 188);
           }
           #crna {
             background: black;
@@ -135,6 +135,7 @@ body {
         justify-content: flex-start;
         align-items: center;
         margin: 10px;
+        padding-left: 20%;
         i {
           margin: 10px;
           font-size: 1.5rem;
@@ -155,9 +156,13 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        h3 {
+          font-size: 22px;
+        }
         a {
           color: black;
           transition: all 0.3s ease;
+          font-size: 20px;
           &:hover {
             transition: all 0.3s ease;
             color: #3d07d1;

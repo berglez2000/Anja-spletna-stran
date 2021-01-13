@@ -194,11 +194,11 @@ body .about-product .colors-section .colors .color .color-show {
 }
 
 body .about-product .colors-section .colors .color #bela {
-  background: whitesmoke;
+  background: #f5efef;
 }
 
 body .about-product .colors-section .colors .color #bez {
-  background: beige;
+  background: #d6cbbc;
 }
 
 body .about-product .colors-section .colors .color #crna {
@@ -230,6 +230,7 @@ body .about-product .checks .check {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px;
+  padding-left: 20%;
 }
 
 body .about-product .checks .check i {
@@ -267,10 +268,15 @@ body .about-product .shop section {
           justify-content: space-between;
 }
 
+body .about-product .shop section h3 {
+  font-size: 22px;
+}
+
 body .about-product .shop section a {
   color: black;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  font-size: 20px;
 }
 
 body .about-product .shop section a:hover {

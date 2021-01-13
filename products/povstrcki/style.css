@@ -130,14 +130,15 @@ body .about-product {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .about-product .title {
   text-align: start;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 body .about-product .product-description {
@@ -147,6 +148,7 @@ body .about-product .product-description {
 }
 
 body .about-product .colors-section {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,14 +156,19 @@ body .about-product .colors-section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 body .about-product .colors-section h3 {
-  text-align: center;
+  text-align: start;
   font-size: 2rem;
+  margin-left: 25%;
 }
 
 body .about-product .colors-section .colors {
+  margin-left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,15 +205,15 @@ body .about-product .colors-section .colors .color .color-show {
 }
 
 body .about-product .colors-section .colors .color #smetana {
-  background: #beb9b9;
+  background: #f1eee6;
 }
 
 body .about-product .colors-section .colors .color #sivobez {
-  background: beige;
+  background: #cecac4;
 }
 
 body .about-product .colors-section .colors .color #temnosiva {
-  background: darkgrey;
+  background: #696461;
 }
 
 body .about-product .price-sect {
@@ -221,10 +228,11 @@ body .about-product .price-sect {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2.25rem;
+  margin: 40px 0;
 }
 
 body .about-product .checks {
-  margin-left: 25%;
+  margin-left: 15%;
 }
 
 body .about-product .checks .check {
@@ -275,10 +283,17 @@ body .about-product .shop section {
           justify-content: space-between;
 }
 
+body .about-product .shop section h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
 body .about-product .shop section a {
   color: black;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  font-size: 20px;
 }
 
 body .about-product .shop section a:hover {

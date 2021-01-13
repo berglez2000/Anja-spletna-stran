@@ -120,9 +120,15 @@ body {
     .price-sect {
       width: 100%;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-evenly;
       align-items: center;
       font-size: 2rem;
+      p {
+        font-size: 22px;
+        strong {
+          font-size: 2rem;
+        }
+      }
     }
     .checks {
       .check {
@@ -150,9 +156,13 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        h3 {
+          font-size: 22px;
+        }
         a {
           color: black;
           transition: all 0.3s ease;
+          font-size: 20px;
           &:hover {
             transition: all 0.3s ease;
             color: #3d07d1;
@@ -232,5 +242,77 @@ body {
         }
       }
     }
+    .about-product {
+      .checks {
+        .check {
+          i,
+          p {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
   }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    .image-gallery {
+      .large-image {
+        height: 450px;
+        img {
+          max-width: 650px;
+          max-height: 450px;
+        }
+        i {
+          height: 450px;
+        }
+      }
+    }
+    .about-product {
+      .product-description {
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  body {
+    .image-gallery {
+      .large-image {
+        height: 337.5px;
+        img {
+          max-width: 500px;
+          max-height: 337.5px;
+        }
+        i {
+          height: 337px;
+        }
+      }
+      .small-images {
+        img.standing {
+          max-height: 90px;
+          max-width: 67.5px;
+        }
+        img.lying {
+          max-height: 67px;
+          max-width: 90px;
+        }
+      }
+    }
+    .about-product {
+      .shop {
+        i,
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
 }

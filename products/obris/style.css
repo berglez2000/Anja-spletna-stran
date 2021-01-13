@@ -203,12 +203,20 @@ body .about-product .price-sect {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 2rem;
+}
+
+body .about-product .price-sect p {
+  font-size: 22px;
+}
+
+body .about-product .price-sect p strong {
   font-size: 2rem;
 }
 
@@ -260,10 +268,15 @@ body .about-product .shop section {
           justify-content: space-between;
 }
 
+body .about-product .shop section h3 {
+  font-size: 22px;
+}
+
 body .about-product .shop section a {
   color: black;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  font-size: 20px;
 }
 
 body .about-product .shop section a:hover {
@@ -353,6 +366,51 @@ body .about-product .shop section a:hover {
   body .image-gallery .large-image img {
     max-width: 750px;
     max-height: 600px;
+  }
+  body .about-product .checks .check i,
+  body .about-product .checks .check p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .image-gallery .large-image {
+    height: 450px;
+  }
+  body .image-gallery .large-image img {
+    max-width: 650px;
+    max-height: 450px;
+  }
+  body .image-gallery .large-image i {
+    height: 450px;
+  }
+  body .about-product .product-description p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  body .image-gallery .large-image {
+    height: 337.5px;
+  }
+  body .image-gallery .large-image img {
+    max-width: 500px;
+    max-height: 337.5px;
+  }
+  body .image-gallery .large-image i {
+    height: 337px;
+  }
+  body .image-gallery .small-images img.standing {
+    max-height: 90px;
+    max-width: 67.5px;
+  }
+  body .image-gallery .small-images img.lying {
+    max-height: 67px;
+    max-width: 90px;
+  }
+  body .about-product .shop i,
+  body .about-product .shop a {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -92,7 +92,7 @@ body {
     .price-sect {
       width: 100%;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-evenly;
       align-items: center;
       font-size: 1.5rem;
       strong {
@@ -111,7 +111,7 @@ body {
           color: green;
         }
         p {
-          font-size: 18px;
+          font-size: 22px;
         }
       }
     }
@@ -125,9 +125,13 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        h3 {
+          font-size: 22px;
+        }
         a {
           color: black;
           transition: all 0.3s ease;
+          font-size: 20px;
           &:hover {
             transition: all 0.3s ease;
             color: #3d07d1;
