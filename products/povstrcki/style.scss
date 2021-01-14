@@ -9,7 +9,7 @@ body {
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 1fr;
-  height: 100vh;
+  min-height: 100vh;
   .image-gallery {
     display: grid;
     grid-template-rows: 80% 20%;
@@ -87,9 +87,10 @@ body {
       margin-bottom: 20px;
     }
     .product-description {
-      width: 80%;
       text-align: center;
-      font-size: 24px;
+      p {
+        font-size: 26px;
+      }
     }
     .colors-section {
       margin-top: 50px;
@@ -139,7 +140,7 @@ body {
       margin: 40px 0;
     }
     .checks {
-      margin-left: 15%;
+      flex-direction: column;
       .check {
         display: flex;
         justify-content: flex-start;
@@ -190,6 +191,7 @@ body {
   body {
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
+    padding: 20px 50px;
     .image-gallery {
       height: fit-content;
       display: flex;
@@ -200,7 +202,17 @@ body {
         display: block;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 20px;
+        margin: 20px 0;
+        font-size: 3rem;
+      }
+      .large-image {
+        img {
+          max-width: 900px;
+          max-height: 675px;
+        }
+      }
+      .small-images {
+        flex-wrap: wrap;
       }
     }
     .about-product {
@@ -212,12 +224,36 @@ body {
         width: 100%;
         text-align: center;
         font-size: 24px;
+        margin: 20px 0;
+      }
+      .colors-section {
+        margin: 20px 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          margin: 0;
+        }
+        .colors {
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .price-sect {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        strong {
+          font-size: 3rem;
+        }
       }
       .checks {
         width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        padding-left: 10%;
       }
       .shop {
         display: flex;
@@ -226,6 +262,15 @@ body {
         height: auto;
         section {
           min-height: 8vh;
+          h3 {
+            font-size: 30px;
+          }
+        }
+        .second {
+          a,
+          i {
+            font-size: 26px;
+          }
         }
       }
     }
@@ -255,6 +300,22 @@ body {
         font-size: 24px;
         width: 100%;
       }
+      .colors-section {
+        h3 {
+          font-size: 3rem;
+        }
+        .colors {
+          .color {
+            p {
+              font-size: 22px;
+            }
+            .color-show {
+              width: 80px;
+              height: 80px;
+            }
+          }
+        }
+      }
       .price-sect {
         p {
           text-align: center;
@@ -266,7 +327,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
       }
       .shop {
         a,
@@ -303,7 +364,11 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
+    padding: 10px 40px;
     .image-gallery {
+      .title {
+        font-size: 2.5rem;
+      }
       .large-image {
         height: 450px;
         img {
@@ -362,6 +427,11 @@ body {
 
 @media screen and (max-width: 540px) {
   body {
+    .image-gallery {
+      .title {
+        font-size: 2rem;
+      }
+    }
     .about-product {
       .shop {
         h3 {
@@ -411,6 +481,41 @@ body {
           font-size: 18px;
           strong {
             font-size: 26px;
+          }
+        }
+      }
+      .shop {
+        section {
+          h3 {
+            font-size: 18px;
+          }
+        }
+        .second {
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    .about-product {
+      .colors-section {
+        h3 {
+          font-size: 2rem;
+        }
+        .colors {
+          .color {
+            p {
+              font-size: 16px;
+            }
+            .color-show {
+              width: 60px;
+              height: 60px;
+            }
           }
         }
       }
@@ -505,6 +610,15 @@ body {
           }
         }
       }
+      .colors-section {
+        .colors {
+          .color {
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
       .checks {
         .check {
           i,
@@ -553,6 +667,15 @@ body {
       .product-description {
         p {
           font-size: 16px;
+        }
+      }
+      .colors-section {
+        .colors {
+          .color {
+            p {
+              font-size: 14px;
+            }
+          }
         }
       }
     }

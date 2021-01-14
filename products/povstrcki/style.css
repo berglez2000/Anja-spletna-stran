@@ -13,7 +13,7 @@ body {
       grid-template-columns: 60% 40%;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body .image-gallery {
@@ -142,9 +142,11 @@ body .about-product .title {
 }
 
 body .about-product .product-description {
-  width: 80%;
   text-align: center;
-  font-size: 24px;
+}
+
+body .about-product .product-description p {
+  font-size: 26px;
 }
 
 body .about-product .colors-section {
@@ -232,7 +234,10 @@ body .about-product .price-sect {
 }
 
 body .about-product .checks {
-  margin-left: 15%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body .about-product .checks .check {
@@ -309,6 +314,7 @@ body .about-product .shop section a:hover {
         grid-template-columns: 100%;
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
+    padding: 20px 50px;
   }
   body .image-gallery {
     height: -webkit-fit-content;
@@ -332,7 +338,16 @@ body .about-product .shop section a:hover {
     display: block;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    font-size: 3rem;
+  }
+  body .image-gallery .large-image img {
+    max-width: 900px;
+    max-height: 675px;
+  }
+  body .image-gallery .small-images {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   body .about-product {
     height: -webkit-fit-content;
@@ -346,9 +361,11 @@ body .about-product .shop section a:hover {
     width: 100%;
     text-align: center;
     font-size: 24px;
+    margin: 20px 0;
   }
-  body .about-product .checks {
-    width: 100%;
+  body .about-product .colors-section {
+    margin: 20px 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -358,6 +375,40 @@ body .about-product .shop section a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  body .about-product .colors-section h3 {
+    margin: 0;
+  }
+  body .about-product .colors-section .colors {
+    margin: 0;
+    padding: 0;
+  }
+  body .about-product .price-sect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .about-product .price-sect strong {
+    font-size: 3rem;
+  }
+  body .about-product .checks {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 10%;
   }
   body .about-product .shop {
     display: -webkit-box;
@@ -373,6 +424,13 @@ body .about-product .shop section a:hover {
   }
   body .about-product .shop section {
     min-height: 8vh;
+  }
+  body .about-product .shop section h3 {
+    font-size: 30px;
+  }
+  body .about-product .shop .second a,
+  body .about-product .shop .second i {
+    font-size: 26px;
   }
 }
 
@@ -399,6 +457,16 @@ body .about-product .shop section a:hover {
     font-size: 24px;
     width: 100%;
   }
+  body .about-product .colors-section h3 {
+    font-size: 3rem;
+  }
+  body .about-product .colors-section .colors .color p {
+    font-size: 22px;
+  }
+  body .about-product .colors-section .colors .color .color-show {
+    width: 80px;
+    height: 80px;
+  }
   body .about-product .price-sect p {
     text-align: center;
     width: 100%;
@@ -415,9 +483,9 @@ body .about-product .shop section a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   body .about-product .shop a,
   body .about-product .shop i {
@@ -437,6 +505,12 @@ body .about-product .shop section a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    padding: 10px 40px;
+  }
+  body .image-gallery .title {
+    font-size: 2.5rem;
+  }
   body .image-gallery .large-image {
     height: 450px;
   }
@@ -478,6 +552,9 @@ body .about-product .shop section a:hover {
 }
 
 @media screen and (max-width: 540px) {
+  body .image-gallery .title {
+    font-size: 2rem;
+  }
   body .about-product .shop h3 {
     font-size: 18px;
   }
@@ -516,6 +593,25 @@ body .about-product .shop section a:hover {
   }
   body .about-product .price-sect p strong {
     font-size: 26px;
+  }
+  body .about-product .shop section h3 {
+    font-size: 18px;
+  }
+  body .about-product .shop .second a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body .about-product .colors-section h3 {
+    font-size: 2rem;
+  }
+  body .about-product .colors-section .colors .color p {
+    font-size: 16px;
+  }
+  body .about-product .colors-section .colors .color .color-show {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -584,6 +680,9 @@ body .about-product .shop section a:hover {
   body .about-product .price-sect p strong {
     font-size: 18px;
   }
+  body .about-product .colors-section .colors .color p {
+    font-size: 14px;
+  }
   body .about-product .checks .check i,
   body .about-product .checks .check p {
     font-size: 16px;
@@ -615,6 +714,9 @@ body .about-product .shop section a:hover {
   }
   body .about-product .product-description p {
     font-size: 16px;
+  }
+  body .about-product .colors-section .colors .color p {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
