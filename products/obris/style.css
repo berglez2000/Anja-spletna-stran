@@ -286,6 +286,7 @@ body .about-product .shop section a:hover {
   color: #3d07d1;
 }
 
+/* Responsive */
 @media screen and (max-width: 1400px) {
   body {
     -ms-grid-columns: 100%;
