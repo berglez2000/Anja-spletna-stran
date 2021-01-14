@@ -94,9 +94,16 @@ body {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      flex-direction: column;
       font-size: 1.5rem;
-      strong {
+      p {
+        margin: 5px 0;
+      }
+      .primary {
         font-size: 2rem;
+      }
+      .secondary {
+        font-size: 1.75rem;
       }
     }
     .checks {
@@ -105,10 +112,10 @@ body {
         justify-content: flex-start;
         align-items: center;
         margin: 10px;
-        i {
+        .check-mark {
           margin: 10px;
-          font-size: 1.5rem;
-          color: green;
+          width: 16px;
+          height: 16px;
         }
         p {
           font-size: 22px;
@@ -277,8 +284,13 @@ body {
         a {
           font-size: 16px;
         }
-        i {
-          display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .first {
+          margin: 10px 0;
+          min-height: fit-content;
         }
       }
     }
@@ -326,9 +338,9 @@ body {
       }
       .price-sect {
         p {
-          font-size: 16px;
+          font-size: 18px;
           strong {
-            font-size: 22px;
+            font-size: 30px;
           }
         }
       }

@@ -156,11 +156,23 @@ body .about-product .price-sect {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 1.5rem;
 }
 
-body .about-product .price-sect strong {
+body .about-product .price-sect p {
+  margin: 5px 0;
+}
+
+body .about-product .price-sect .primary {
   font-size: 2rem;
+}
+
+body .about-product .price-sect .secondary {
+  font-size: 1.75rem;
 }
 
 body .about-product .checks .check {
@@ -176,10 +188,10 @@ body .about-product .checks .check {
   margin: 10px;
 }
 
-body .about-product .checks .check i {
+body .about-product .checks .check .check-mark {
   margin: 10px;
-  font-size: 1.5rem;
-  color: green;
+  width: 16px;
+  height: 16px;
 }
 
 body .about-product .checks .check p {
@@ -382,11 +394,29 @@ body .about-product .shop section a:hover {
     max-width: 60px;
     max-height: 80px;
   }
+  body .about-product .shop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   body .about-product .shop a {
     font-size: 16px;
   }
-  body .about-product .shop i {
-    display: none;
+  body .about-product .shop .first {
+    margin: 10px 0;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
   }
 }
 
@@ -424,10 +454,10 @@ body .about-product .shop section a:hover {
     font-size: 18px;
   }
   body .about-product .price-sect p {
-    font-size: 16px;
+    font-size: 18px;
   }
   body .about-product .price-sect p strong {
-    font-size: 22px;
+    font-size: 30px;
   }
   body .about-product .checks .check i,
   body .about-product .checks .check p {

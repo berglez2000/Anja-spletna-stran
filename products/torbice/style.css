@@ -375,16 +375,37 @@ body .about-product .shop section a:hover {
   }
   body .about-product .title {
     display: none;
+    font-size: 3rem;
   }
   body .about-product .product-description {
     margin: 20px 0;
+    padding: 0 15px;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     width: 100%;
+  }
+  body .about-product .colors-section {
+    margin: 20px;
+  }
+  body .about-product .colors-section h3 {
+    font-size: 3rem;
+  }
+  body .about-product .colors-section .colors .color .color-show {
+    width: 75px;
+    height: 75px;
+  }
+  body .about-product .colors-section .colors .color p {
+    font-size: 22px;
+  }
+  body .about-product .price-sect {
+    margin: 20px 0;
   }
   body .about-product .price-sect p {
     text-align: center;
     width: 100%;
+  }
+  body .about-product .price-sect strong {
+    font-size: 3rem;
   }
   body .about-product .checks {
     width: 100%;
@@ -398,12 +419,15 @@ body .about-product .shop section a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 20%;
   }
-  body .about-product .shop a,
-  body .about-product .shop i {
+  body .about-product .shop section h3 {
+    font-size: 2rem;
+  }
+  body .about-product .shop section a {
     font-size: 1.5rem;
   }
 }

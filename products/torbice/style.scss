@@ -237,17 +237,40 @@ body {
       height: fit-content;
       .title {
         display: none;
+        font-size: 3rem;
       }
       .product-description {
         margin: 20px 0;
+        padding: 0 15px;
         text-align: center;
-        font-size: 24px;
+        font-size: 28px;
         width: 100%;
       }
+      .colors-section {
+        margin: 20px;
+        h3 {
+          font-size: 3rem;
+        }
+        .colors {
+          .color {
+            .color-show {
+              width: 75px;
+              height: 75px;
+            }
+            p {
+              font-size: 22px;
+            }
+          }
+        }
+      }
       .price-sect {
+        margin: 20px 0;
         p {
           text-align: center;
           width: 100%;
+        }
+        strong {
+          font-size: 3rem;
         }
       }
       .checks {
@@ -255,12 +278,17 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        padding-left: 20%;
       }
       .shop {
-        a,
-        i {
-          font-size: 1.5rem;
+        section {
+          h3 {
+            font-size: 2rem;
+          }
+          a {
+            font-size: 1.5rem;
+          }
         }
       }
     }
