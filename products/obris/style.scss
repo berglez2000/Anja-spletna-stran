@@ -123,6 +123,7 @@ body {
       justify-content: space-evenly;
       align-items: center;
       font-size: 2rem;
+      margin: 30px 0;
       p {
         font-size: 22px;
         strong {
@@ -149,7 +150,7 @@ body {
     .shop {
       display: flex;
       justify-content: flex-start;
-      height: 10vh;
+      min-height: 10vh;
       padding: 10px;
       section {
         margin: 0 10px;
@@ -189,7 +190,7 @@ body {
         display: block;
         text-transform: uppercase;
         text-align: center;
-        margin: 20px 0;
+        margin-bottom: 20px;
       }
       .large-image {
         img {
@@ -314,5 +315,201 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
+  body {
+    .about-product {
+      .shop {
+        h3 {
+          font-size: 18px;
+        }
+        i {
+          display: none;
+        }
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 515px) {
+  body {
+    .image-gallery {
+      .title {
+        font-size: 1.5rem;
+      }
+      .large-image {
+        height: 337px;
+        img {
+          max-height: 337px;
+          max-width: 400px;
+        }
+        i {
+          height: 337px;
+        }
+      }
+      .small-images {
+        img.standing {
+          height: 75px;
+          width: 56px;
+        }
+        img.lying {
+          width: 75px;
+          height: 56px;
+        }
+      }
+    }
+    .about-product {
+      .price-sect {
+        p {
+          font-size: 18px;
+          strong {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  body {
+    .image-gallery {
+      .large-image {
+        height: 300px;
+        img {
+          max-height: 300px;
+          max-width: 350px;
+        }
+        i {
+          height: 300px;
+          font-size: 20px;
+        }
+        i.fas.fa-arrow-left {
+          transform: translateX(150%);
+        }
+        i.fas.fa-arrow-right {
+          transform: translateX(-150%);
+        }
+      }
+    }
+    .about-product {
+      .product-description {
+        p {
+          font-size: 18px;
+        }
+      }
+      .price-sect {
+        p {
+          font-size: 16px;
+          strong {
+            font-size: 22px;
+          }
+        }
+      }
+      .shop {
+        .first {
+          h3 {
+            font-size: 18px;
+          }
+        }
+        .second {
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 355px) {
+  body {
+    .image-gallery {
+      .title {
+        font-size: 1.25rem;
+      }
+      .large-image {
+        height: 250px;
+        img {
+          max-width: 285px;
+          max-height: 250px;
+        }
+        i {
+          height: 250px;
+        }
+      }
+      .small-images {
+        img.standing {
+          width: 40px;
+          height: 56px;
+        }
+        img.lying {
+          width: 56px;
+          height: 40px;
+        }
+      }
+    }
+    .about-product {
+      .price-sect {
+        p {
+          font-size: 14px;
+          strong {
+            font-size: 18px;
+          }
+        }
+      }
+      .checks {
+        .check {
+          i,
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+      .shop {
+        .second {
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    .image-gallery {
+      .large-image {
+        height: 220px;
+        img {
+          max-width: 250px;
+          max-height: 220px;
+        }
+        i {
+          height: 220px;
+          font-size: 16px;
+        }
+      }
+      .small-images {
+        img.standing {
+          width: 30px;
+          height: 40px;
+        }
+        img.lying {
+          width: 40px;
+          height: 30px;
+        }
+      }
+    }
+    .about-product {
+      .product-description {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
