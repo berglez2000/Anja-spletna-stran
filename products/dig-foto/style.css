@@ -285,6 +285,15 @@ body .about-product .shop section a:hover {
     text-align: center;
     font-size: 24px;
   }
+  body .about-product .price-sect {
+    margin: 30px 0;
+  }
+  body .about-product .price-sect .primary {
+    font-size: 3rem;
+  }
+  body .about-product .price-sect .secondary {
+    font-size: 2.5rem;
+  }
   body .about-product .checks {
     width: 100%;
     display: -webkit-box;
@@ -297,7 +306,15 @@ body .about-product .shop section a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  body .about-product .checks .check .check-mark {
+    width: 26px;
+    height: 26px;
+  }
+  body .about-product .checks .check p {
+    font-size: 1.5rem;
+  }
   body .about-product .shop {
+    margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -310,7 +327,13 @@ body .about-product .shop section a:hover {
     height: auto;
   }
   body .about-product .shop section {
-    min-height: 8vh;
+    min-height: 4vh;
+  }
+  body .about-product .shop .first h3 {
+    font-size: 2rem;
+  }
+  body .about-product .shop .second a {
+    font-size: 1.75rem;
   }
 }
 
@@ -354,7 +377,6 @@ body .about-product .shop section a:hover {
     width: 100%;
   }
   body .about-product .price-sect {
-    margin: 10px 0;
     text-align: center;
   }
   body .about-product .price-sect p {
@@ -367,32 +389,66 @@ body .about-product .shop section a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  body .large-image img {
-    max-width: 80%;
+  body .image-gallery .large-image {
+    height: 450px;
   }
-  body .small-images img {
-    max-width: 75px;
-    max-height: 100px;
+  body .image-gallery .large-image img {
+    max-width: 650px;
+    max-height: 450px;
+  }
+  body .image-gallery .large-image i {
+    height: 450px;
+  }
+  body .about-product .shop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  body .image-gallery .large-image {
+    height: 450px;
+  }
+  body .image-gallery .large-image img {
+    max-width: 500px;
+    max-height: 450px;
+  }
+  body .image-gallery .large-image i {
+    height: 450px;
+  }
+  body .image-gallery .small-images img.standing {
+    max-height: 90px;
+    max-width: 67.5px;
+  }
+  body .image-gallery .small-images img.lying {
+    max-height: 67px;
+    max-width: 90px;
   }
 }
 
 @media screen and (max-width: 540px) {
-  body .image-gallery .title {
-    font-size: 1.75rem;
+  body {
+    padding: 30px 20px;
   }
-  body .image-gallery .large-image {
-    height: 510px;
-    max-width: 100%;
+  body .about-product .title {
+    font-size: 2rem;
   }
-  body .image-gallery .large-image img {
-    width: 100%;
+  body .about-product .price-sect .primary {
+    font-size: 2.75rem;
   }
-  body .image-gallery .large-image i {
-    height: 510px;
-  }
-  body .image-gallery .small-images img {
-    max-width: 60px;
-    max-height: 80px;
+  body .about-product .price-sect .secondary {
+    font-size: 2.25rem;
   }
   body .about-product .shop {
     display: -webkit-box;
@@ -450,18 +506,44 @@ body .about-product .shop section a:hover {
   body .image-gallery .large-image i {
     height: 466px;
   }
+  body .image-gallery .small-images img.standing {
+    max-width: 50px;
+    max-height: 67px;
+  }
   body .about-product .product-description p {
-    font-size: 18px;
+    font-size: 22px;
   }
   body .about-product .price-sect p {
-    font-size: 18px;
+    font-size: 20px;
   }
-  body .about-product .price-sect p strong {
-    font-size: 30px;
+  body .about-product .price-sect .primary {
+    font-size: 2.25rem;
+  }
+  body .about-product .price-sect .secondary {
+    font-size: 2rem;
+  }
+  body .about-product .checks {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body .about-product .checks .check {
+    padding: 0;
+    margin: 10px 0;
   }
   body .about-product .checks .check i,
   body .about-product .checks .check p {
-    font-size: 16px;
+    font-size: 18px;
+  }
+  body .about-product .shop .first h3 {
+    font-size: 1.75rem;
+  }
+  body .about-product .shop .second i,
+  body .about-product .shop .second a {
+    font-size: 18px;
+  }
+  body .about-product .shop .second div {
+    margin: 3px 0;
   }
 }
 
@@ -484,11 +566,19 @@ body .about-product .shop section a:hover {
     max-width: 40px;
     max-height: 53px;
   }
-  body .about-product .shop h3 {
+  body .about-product .checks .check .check-mark {
+    width: 18px;
+    height: 18px;
+  }
+  body .about-product .checks .check p {
     font-size: 16px;
   }
-  body .about-product .shop a {
-    font-size: 14px;
+  body .about-product .shop .first h3 {
+    font-size: 1.5rem;
+  }
+  body .about-product .shop .second i,
+  body .about-product .shop .second a {
+    font-size: 15px;
   }
 }
 
@@ -504,11 +594,25 @@ body .about-product .shop section a:hover {
   body .image-gallery .large-image i {
     height: 333px;
   }
+  body .image-gallery .small-images img.standing {
+    width: 30px;
+    height: 40px;
+  }
   body .about-product .product-description p {
     font-size: 16px;
   }
-  body .about-product .price-sect p strong {
-    font-size: 1.15rem;
+  body .about-product .price-sect {
+    padding-left: 20px;
+    text-align: start;
+  }
+  body .about-product .price-sect .primary {
+    font-size: 1.75rem;
+  }
+  body .about-product .price-sect .secondary {
+    font-size: 1.4rem;
+  }
+  body .about-product .price-sect p {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
