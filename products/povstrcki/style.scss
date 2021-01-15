@@ -24,12 +24,9 @@ body {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      img.lying {
-        width: 700px;
-        height: 525px;
-      }
-      img.standing {
-        height: 600px;
+      img {
+        max-height: 600px;
+        max-width: 750px;
       }
       i {
         cursor: pointer;
@@ -426,13 +423,13 @@ body {
   body {
     .image-gallery {
       .large-image {
-        height: 337.5px;
+        height: 400px;
         img {
           max-width: 500px;
-          max-height: 337.5px;
+          max-height: 400px;
         }
         i {
-          height: 337px;
+          height: 400px;
         }
       }
       .small-images {
@@ -511,13 +508,13 @@ body {
         font-size: 2rem;
       }
       .large-image {
-        height: 337px;
+        height: 400px;
         img {
-          max-height: 337px;
+          max-height: 400px;
           max-width: 400px;
         }
         i {
-          height: 337px;
+          height: 400px;
         }
       }
       .small-images {
@@ -563,6 +560,19 @@ body {
 
 @media screen and (max-width: 450px) {
   body {
+    .image-gallery {
+      .large-image {
+        height: 400px;
+        align-items: center;
+        img {
+          max-width: 350px;
+          max-height: 400px;
+        }
+        i {
+          height: 400px;
+        }
+      }
+    }
     .about-product {
       .colors-section {
         h3 {
@@ -615,13 +625,7 @@ body {
   body {
     .image-gallery {
       .large-image {
-        height: 263px;
-        img {
-          max-height: 263px;
-          max-width: 350px;
-        }
         i {
-          height: 263px;
           font-size: 20px;
         }
         i.fas.fa-arrow-left {
@@ -679,13 +683,13 @@ body {
         font-size: 1.75rem;
       }
       .large-image {
-        height: 214px;
+        height: 400px;
         img {
-          max-width: 285px;
-          max-height: 214px;
+          max-width: 300px;
+          max-height: 400px;
         }
         i {
-          height: 214px;
+          height: 400px;
         }
       }
       .small-images {
@@ -725,14 +729,14 @@ body {
   body {
     .image-gallery {
       .large-image {
-        height: 187px;
+        height: 333px;
+        width: 100%;
         img {
           max-width: 250px;
-          max-height: 187px;
+          max-height: 333px;
         }
         i {
-          height: 187px;
-          font-size: 16px;
+          height: 333px;
         }
       }
       .small-images {
