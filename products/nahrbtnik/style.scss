@@ -1,5 +1,9 @@
 /* variables */
 $lavanda: rgb(152, 143, 156);
+@font-face {
+  src: url(../../fonts/Montserrat/Montserrat-LightItalic.ttf);
+  font-family: main;
+}
 
 * {
   margin: 0;
@@ -8,7 +12,7 @@ $lavanda: rgb(152, 143, 156);
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: main;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 1fr;
@@ -26,7 +30,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      img{
+      img {
         max-height: 600px;
         max-width: 750px;
       }
@@ -55,7 +59,7 @@ body {
       height: 100%;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       img {
         margin: 10px 5px;
         cursor: pointer;
@@ -134,6 +138,9 @@ body {
         h3 {
           font-size: 2rem;
         }
+        .large {
+          font-size: 1.25rem;
+        }
       }
     }
     .price-sect {
@@ -141,8 +148,16 @@ body {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      font-size: 2rem;
       margin: 30px 0;
+      strong {
+        font-size: 2.5rem;
+        .line-through {
+          text-decoration: line-through;
+        }
+        .larger {
+          font-size: 3.25rem;
+        }
+      }
     }
     .checks {
       margin-left: 20%;
@@ -177,7 +192,7 @@ body {
         a {
           color: black;
           transition: all 0.3s ease;
-          font-size: 20px;
+          font-size: 19px;
           &:hover {
             transition: all 0.3s ease;
             color: #3d07d1;
@@ -209,9 +224,13 @@ body {
         font-size: 3rem;
       }
       .large-image {
+        height: 750px;
         img {
           max-width: 900px;
-          max-height: 675px;
+          max-height: 750x;
+        }
+        i {
+          height: 750px;
         }
       }
       .small-images {
@@ -306,9 +325,14 @@ body {
     min-height: 100vh;
     .image-gallery {
       .large-image {
+        height: 750px;
+        align-items: center;
         img {
-          max-height: 600px;
+          max-height: 750px;
           max-width: 800px;
+        }
+        i {
+          height: 750px;
         }
       }
     }
@@ -323,18 +347,30 @@ body {
         font-size: 24px;
         width: 100%;
       }
-      .colors-section {
-        h3 {
-          font-size: 3rem;
-        }
-        .colors {
-          .color {
-            p {
-              font-size: 22px;
+      .color-sizes {
+        .colors-section {
+          h3 {
+            font-size: 3rem;
+          }
+          .colors {
+            .color {
+              p {
+                font-size: 22px;
+              }
+              .color-show {
+                width: 80px;
+                height: 80px;
+              }
             }
-            .color-show {
-              width: 80px;
-              height: 80px;
+          }
+        }
+        .sizes {
+          h3 {
+            font-size: 3rem;
+          }
+          li {
+            .large {
+              font-size: 1.75rem;
             }
           }
         }
@@ -343,6 +379,12 @@ body {
         p {
           text-align: center;
           width: 100%;
+          strong {
+            font-size: 3rem;
+            .larger {
+              font-size: 3.5rem;
+            }
+          }
         }
       }
       .checks {
@@ -396,13 +438,13 @@ body {
         font-size: 2.5rem;
       }
       .large-image {
-        height: 450px;
+        height: 600px;
         img {
           max-width: 650px;
-          max-height: 450px;
+          max-height: 600px;
         }
         i {
-          height: 450px;
+          height: 600px;
         }
       }
     }
@@ -434,13 +476,13 @@ body {
   body {
     .image-gallery {
       .large-image {
-        height: 337.5px;
+        height: 500px;
         img {
           max-width: 500px;
-          max-height: 337.5px;
+          max-height: 500px;
         }
         i {
-          height: 337px;
+          height: 500px;
         }
       }
       .small-images {
@@ -456,14 +498,28 @@ body {
     }
     .about-product {
       .color-sizes {
+        .colors-section {
+          .colors {
+            .color {
+              .color-show {
+                width: 70px;
+                height: 70px;
+              }
+            }
+          }
+        }
         .colors-section,
         .sizes {
           h3 {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
           }
           li {
             font-size: 16px;
             list-style-type: none;
+            margin: 5px 0;
+            .large {
+              font-size: 1.25rem;
+            }
           }
         }
       }
@@ -499,13 +555,13 @@ body {
         font-size: 1.5rem;
       }
       .large-image {
-        height: 337px;
+        height: 400px;
         img {
-          max-height: 337px;
+          max-height: 400px;
           max-width: 400px;
         }
         i {
-          height: 337px;
+          height: 400px;
         }
       }
       .small-images {
@@ -535,7 +591,8 @@ body {
           }
         }
         .second {
-          a, i {
+          a,
+          i {
             font-size: 18px;
           }
         }
@@ -551,7 +608,7 @@ body {
       .title {
         font-size: 2rem;
       }
-      .large-image{
+      .large-image {
         align-items: center;
       }
     }
@@ -565,9 +622,6 @@ body {
           margin: 10px 0;
         }
         .colors-section {
-          h3 {
-            font-size: 1.75rem;
-          }
           .colors {
             .color {
               .color-show {
@@ -579,7 +633,6 @@ body {
         }
         .sizes {
           h3 {
-            font-size: 1.75rem;
             text-align: center;
             margin: 10px 0;
           }
@@ -588,6 +641,9 @@ body {
             font-size: 18px;
             strong {
               font-size: 20px;
+            }
+            .large {
+              font-size: 24px;
             }
           }
         }
@@ -618,13 +674,13 @@ body {
   body {
     .image-gallery {
       .large-image {
-        height: 300px;
+        height: 400px;
         img {
-          max-height: 300px;
+          max-height: 400px;
           max-width: 350px;
         }
         i {
-          height: 300px;
+          height: 400px;
           font-size: 20px;
         }
         i.fas.fa-arrow-left {
@@ -663,12 +719,11 @@ body {
   }
 }
 
-@media screen and (max-width: 365px){
-  body{
-    .about-product{
-      .shop{
+@media screen and (max-width: 365px) {
+  body {
+    .about-product {
+      .shop {
         padding: 10px 0;
-        
       }
     }
   }
@@ -681,13 +736,13 @@ body {
         font-size: 1.75rem;
       }
       .large-image {
-        height: 214px;
+        height: 350px;
         img {
           max-width: 285px;
-          max-height: 214px;
+          max-height: 350px;
         }
         i {
-          height: 214px;
+          height: 350px;
         }
       }
       .small-images {
@@ -762,15 +817,18 @@ body {
   }
 }
 
-@media screen and (max-width: 315px){
-  body{
-    .about-product{
-      .shop{
-        .first{h3{
-          font-size: 1.5rem;
-        }}
-        .second{
-          a, i{
+@media screen and (max-width: 315px) {
+  body {
+    .about-product {
+      .shop {
+        .first {
+          h3 {
+            font-size: 1.5rem;
+          }
+        }
+        .second {
+          a,
+          i {
             font-size: 14px;
           }
         }
@@ -786,13 +844,13 @@ body {
         font-size: 1.5rem;
       }
       .large-image {
-        height: 187px;
+        height: 300px;
         img {
           max-width: 250px;
-          max-height: 187px;
+          max-height: 300px;
         }
         i {
-          height: 187px;
+          height: 300px;
           font-size: 16px;
         }
       }
@@ -815,9 +873,6 @@ body {
       }
       .color-sizes {
         .colors-section {
-          h3 {
-            font-size: 1.75rem;
-          }
           .colors {
             .color {
               p {
@@ -834,28 +889,34 @@ body {
           h3 {
             font-size: 1.75rem;
           }
-          li{
+          li {
             font-size: 16px;
-            strong{
+            strong {
               font-size: 18px;
+            }
+            .large {
+              font-size: 22px;
             }
           }
         }
       }
-      .price-sect{
-        .price{
+      .price-sect {
+        .price {
           font-size: 2.25rem;
         }
       }
       .shop {
+        padding: 0;
         .first {
           h3 {
             font-size: 1.25rem;
           }
         }
         .second {
-          i, a {
-            font-size: 12px;
+          padding: 0;
+          i,
+          a {
+            font-size: 13px;
           }
         }
       }

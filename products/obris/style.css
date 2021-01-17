@@ -1,3 +1,8 @@
+@font-face {
+  src: url(../../fonts/Montserrat/Montserrat-LightItalic.ttf);
+  font-family: main;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: main;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60% 40%;
@@ -222,7 +227,16 @@ body .about-product .price-sect p {
 }
 
 body .about-product .price-sect p strong {
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+body .about-product .price-sect p strong .line-through {
+  text-decoration: line-through;
+}
+
+body .about-product .price-sect p strong .larger {
+  font-size: 3.25rem;
+  margin-left: 10px;
 }
 
 body .about-product .checks .check {
@@ -281,7 +295,7 @@ body .about-product .shop section a {
   color: black;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 body .about-product .shop section a:hover {
@@ -638,6 +652,13 @@ body .about-product .shop section a:hover {
   }
 }
 
+@media screen and (max-width: 370px) {
+  body .about-product .shop .second i,
+  body .about-product .shop .second a {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 355px) {
   body .image-gallery .title {
     font-size: 1.35rem;
@@ -708,8 +729,15 @@ body .about-product .shop section a:hover {
   body .about-product .price-sect p {
     font-size: 18px;
   }
-  body .about-product .shop .second i, body .about-product .shop .second a {
-    font-size: 12px;
+  body .about-product .shop {
+    padding: 0;
+  }
+  body .about-product .shop .second {
+    padding: 0;
+  }
+  body .about-product .shop .second i,
+  body .about-product .shop .second a {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */

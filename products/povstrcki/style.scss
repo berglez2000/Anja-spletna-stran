@@ -1,3 +1,8 @@
+@font-face {
+  src: url(../../fonts/Montserrat/Montserrat-LightItalic.ttf);
+  font-family: main;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,7 @@
 
 body {
   padding: 10px 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: main;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 1fr;
@@ -139,6 +144,17 @@ body {
       align-items: center;
       font-size: 2.25rem;
       margin: 40px 0;
+      p {
+        strong {
+          font-size: 3rem;
+          .line-through {
+            text-decoration: line-through;
+          }
+          .larger {
+            font-size: 3.5rem;
+          }
+        }
+      }
     }
     .checks {
       flex-direction: column;
@@ -175,7 +191,7 @@ body {
         a {
           color: black;
           transition: all 0.3s ease;
-          font-size: 20px;
+          font-size: 18px;
           &:hover {
             transition: all 0.3s ease;
             color: #3d07d1;
@@ -212,7 +228,7 @@ body {
           max-width: 900px;
           max-height: 675px;
         }
-        i{
+        i {
           height: 675px;
         }
       }
@@ -249,9 +265,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        strong {
-          font-size: 3rem;
-        }
       }
       .checks {
         width: 100%;
@@ -292,7 +305,7 @@ body {
           max-height: 600px;
           max-width: 800px;
         }
-        i{
+        i {
           height: 600px;
         }
       }
@@ -330,9 +343,6 @@ body {
         p {
           text-align: center;
           width: 100%;
-          strong {
-            font-size: 3.5rem;
-          }
         }
       }
       .checks {
@@ -412,7 +422,7 @@ body {
         flex-direction: column;
         .first {
           h3 {
-            font-size: 1.75rem;
+            font-size: 2.25rem;
           }
         }
         .second {
@@ -616,8 +626,8 @@ body {
       }
       .shop {
         padding: 10px 0;
-        .first{
-          h3{
+        .first {
+          h3 {
             font-size: 1.9rem;
           }
         }
@@ -678,8 +688,11 @@ body {
           }
         }
         .second {
-          a {
-            font-size: 16px;
+          padding: 0;
+          a,
+          i {
+            padding: 0;
+            font-size: 15px;
           }
         }
       }
@@ -777,14 +790,25 @@ body {
           }
         }
       }
+      .price-sect {
+        p {
+          strong {
+            font-size: 2rem;
+            .larger {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
       .shop {
         .first {
           h3 {
             font-size: 1.25rem;
           }
         }
-        .second{
-          i, a{
+        .second {
+          i,
+          a {
             font-size: 12px;
           }
         }

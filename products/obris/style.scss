@@ -1,3 +1,8 @@
+@font-face {
+  src: url(../../fonts/Montserrat/Montserrat-LightItalic.ttf);
+  font-family: main;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +10,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: main;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 1fr;
@@ -128,7 +133,14 @@ body {
       p {
         font-size: 22px;
         strong {
-          font-size: 2rem;
+          font-size: 2.5rem;
+          .line-through {
+            text-decoration: line-through;
+          }
+          .larger {
+            font-size: 3.25rem;
+            margin-left: 10px;
+          }
         }
       }
     }
@@ -164,7 +176,7 @@ body {
         a {
           color: black;
           transition: all 0.3s ease;
-          font-size: 20px;
+          font-size: 19px;
           &:hover {
             transition: all 0.3s ease;
             color: #3d07d1;
@@ -194,13 +206,13 @@ body {
         margin-bottom: 20px;
         font-size: 2.25rem;
       }
-      .large-image{
+      .large-image {
         height: 675px;
-        img{
+        img {
           max-width: 900px;
           max-height: 675px;
         }
-        i{
+        i {
           height: 675px;
         }
       }
@@ -282,12 +294,12 @@ body {
         text-transform: uppercase;
         margin-bottom: 30px;
       }
-      .large-image{
-        img{
+      .large-image {
+        img {
           max-height: 600px;
           max-width: 800px;
         }
-        i{
+        i {
           height: 600px;
         }
       }
@@ -441,7 +453,7 @@ body {
   body {
     padding: 30px 15px;
     .image-gallery {
-      .title{
+      .title {
         font-size: 1.75rem;
       }
       .large-image {
@@ -507,6 +519,21 @@ body {
           }
           div {
             margin: 3px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  body {
+    .about-product {
+      .shop {
+        .second {
+          i,
+          a {
+            font-size: 16px;
           }
         }
       }
@@ -612,10 +639,13 @@ body {
           font-size: 18px;
         }
       }
-      .shop{
-        .second{
-          i, a{
-            font-size: 12px;
+      .shop {
+        padding: 0;
+        .second {
+          padding: 0;
+          i,
+          a {
+            font-size: 13px;
           }
         }
       }

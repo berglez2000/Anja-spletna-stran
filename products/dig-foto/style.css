@@ -1,3 +1,8 @@
+@font-face {
+  src: url(../../fonts/Montserrat/Montserrat-LightItalic.ttf);
+  font-family: main;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: main;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 55% 45%;
@@ -91,6 +96,8 @@ body .image-gallery .small-images {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body .image-gallery .small-images img {
@@ -169,6 +176,15 @@ body .about-product .price-sect p {
 
 body .about-product .price-sect .primary {
   font-size: 2rem;
+}
+
+body .about-product .price-sect .primary .line-through {
+  text-decoration: line-through;
+}
+
+body .about-product .price-sect .primary .larger {
+  font-size: 3rem;
+  margin-left: 10px;
 }
 
 body .about-product .price-sect .secondary {
@@ -265,6 +281,9 @@ body .about-product .shop section a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  body .image-gallery .title {
+    font-size: 2.5rem;
   }
   body .image-gallery .title {
     display: block;
@@ -486,8 +505,8 @@ body .about-product .shop section a:hover {
     height: 533px;
   }
   body .image-gallery .large-image img {
-    width: 400px;
-    height: 533px;
+    max-width: 400px;
+    max-height: 533px;
   }
   body .image-gallery .large-image i {
     height: 533px;
@@ -498,6 +517,9 @@ body .about-product .shop section a:hover {
   body {
     padding: 30px 15px;
   }
+  body .image-gallery .title {
+    font-size: 2rem;
+  }
   body .image-gallery .large-image {
     height: 466px;
     -webkit-box-align: center;
@@ -505,8 +527,8 @@ body .about-product .shop section a:hover {
             align-items: center;
   }
   body .image-gallery .large-image img {
-    width: 350px;
-    height: 466px;
+    max-width: 350px;
+    max-height: 466px;
   }
   body .image-gallery .large-image i {
     height: 466px;
@@ -552,6 +574,12 @@ body .about-product .shop section a:hover {
   }
 }
 
+@media screen and (max-width: 370px) {
+  body .about-product .shop .second i, body .about-product .shop .second a {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 355px) {
   body .image-gallery .title {
     font-size: 1.35rem;
@@ -560,8 +588,8 @@ body .about-product .shop section a:hover {
     height: 400px;
   }
   body .image-gallery .large-image img {
-    width: 300px;
-    height: 400px;
+    max-width: 300px;
+    max-height: 400px;
   }
   body .image-gallery .large-image i {
     height: 400px;
@@ -593,8 +621,8 @@ body .about-product .shop section a:hover {
     width: 100%;
   }
   body .image-gallery .large-image img {
-    width: 250px;
-    height: 333px;
+    max-width: 250px;
+    max-height: 333px;
   }
   body .image-gallery .large-image i {
     height: 333px;

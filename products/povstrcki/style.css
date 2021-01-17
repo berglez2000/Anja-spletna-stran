@@ -1,3 +1,8 @@
+@font-face {
+  src: url(../../fonts/Montserrat/Montserrat-LightItalic.ttf);
+  font-family: main;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +12,7 @@
 
 body {
   padding: 10px 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: main;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60% 40%;
@@ -234,6 +239,18 @@ body .about-product .price-sect {
   margin: 40px 0;
 }
 
+body .about-product .price-sect p strong {
+  font-size: 3rem;
+}
+
+body .about-product .price-sect p strong .line-through {
+  text-decoration: line-through;
+}
+
+body .about-product .price-sect p strong .larger {
+  font-size: 3.5rem;
+}
+
 body .about-product .checks {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -299,7 +316,7 @@ body .about-product .shop section a {
   color: black;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 body .about-product .shop section a:hover {
@@ -401,9 +418,6 @@ body .about-product .shop section a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  body .about-product .price-sect strong {
-    font-size: 3rem;
-  }
   body .about-product .checks {
     width: 100%;
     display: -webkit-box;
@@ -483,9 +497,6 @@ body .about-product .shop section a:hover {
     text-align: center;
     width: 100%;
   }
-  body .about-product .price-sect p strong {
-    font-size: 3.5rem;
-  }
   body .about-product .checks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -555,7 +566,7 @@ body .about-product .shop section a:hover {
             flex-direction: column;
   }
   body .about-product .shop .first h3 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
   body .about-product .shop .second a,
   body .about-product .shop .second i {
@@ -727,8 +738,13 @@ body .about-product .shop section a:hover {
   body .about-product .shop .first h3 {
     font-size: 1.75rem;
   }
-  body .about-product .shop .second a {
-    font-size: 16px;
+  body .about-product .shop .second {
+    padding: 0;
+  }
+  body .about-product .shop .second a,
+  body .about-product .shop .second i {
+    padding: 0;
+    font-size: 15px;
   }
 }
 
@@ -792,10 +808,17 @@ body .about-product .shop section a:hover {
   body .about-product .colors-section .colors .color p {
     font-size: 14px;
   }
+  body .about-product .price-sect p strong {
+    font-size: 2rem;
+  }
+  body .about-product .price-sect p strong .larger {
+    font-size: 3rem;
+  }
   body .about-product .shop .first h3 {
     font-size: 1.25rem;
   }
-  body .about-product .shop .second i, body .about-product .shop .second a {
+  body .about-product .shop .second i,
+  body .about-product .shop .second a {
     font-size: 12px;
   }
 }
