@@ -241,7 +241,7 @@ body .about-product .price-sect {
 }
 
 body .about-product .price-sect strong {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
 }
 
 body .about-product .price-sect strong .line-through {
@@ -249,7 +249,7 @@ body .about-product .price-sect strong .line-through {
 }
 
 body .about-product .price-sect strong .larger {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 body .about-product .checks {

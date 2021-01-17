@@ -183,7 +183,7 @@ body .about-product .price-sect .primary .line-through {
 }
 
 body .about-product .price-sect .primary .larger {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-left: 10px;
 }
 
@@ -353,7 +353,8 @@ body .about-product .shop section a:hover {
   body .about-product .shop .first h3 {
     font-size: 2rem;
   }
-  body .about-product .shop .second a, body .about-product .shop .second i {
+  body .about-product .shop .second a,
+  body .about-product .shop .second i {
     font-size: 1.75rem;
   }
 }
@@ -575,7 +576,8 @@ body .about-product .shop section a:hover {
 }
 
 @media screen and (max-width: 370px) {
-  body .about-product .shop .second i, body .about-product .shop .second a {
+  body .about-product .shop .second i,
+  body .about-product .shop .second a {
     font-size: 16px;
   }
 }
@@ -647,7 +649,8 @@ body .about-product .shop section a:hover {
   body .about-product .price-sect p {
     font-size: 18px;
   }
-  body .about-product .shop .second i, body .about-product .shop .second a {
+  body .about-product .shop .second i,
+  body .about-product .shop .second a {
     font-size: 12px;
   }
 }

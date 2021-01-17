@@ -230,11 +230,11 @@ body .about-product .price-sect {
 
 body .about-product .price-sect p strong .line-through {
   text-decoration: line-through;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 body .about-product .price-sect p strong .larger {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 body .about-product .checks .check {
@@ -795,7 +795,8 @@ body .about-product .shop section a:hover {
   body .about-product .shop .first h3 {
     font-size: 1.25rem;
   }
-  body .about-product .shop .second i, body .about-product .shop .second a {
+  body .about-product .shop .second i,
+  body .about-product .shop .second a {
     font-size: 12px;
   }
 }

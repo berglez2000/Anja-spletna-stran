@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
   src: url(../../fonts/Montserrat/Montserrat-LightItalic.ttf);
   font-family: main;
 }
@@ -107,11 +107,11 @@ body {
       }
       .primary {
         font-size: 2rem;
-        .line-through{
+        .line-through {
           text-decoration: line-through;
         }
-        .larger{
-          font-size: 3rem;
+        .larger {
+          font-size: 2.5rem;
           margin-left: 10px;
         }
       }
@@ -169,7 +169,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
     .image-gallery {
-      .title{
+      .title {
         font-size: 2.5rem;
       }
       height: fit-content;
@@ -235,7 +235,8 @@ body {
           }
         }
         .second {
-          a, i {
+          a,
+          i {
             font-size: 1.75rem;
           }
         }
@@ -394,7 +395,7 @@ body {
   body {
     padding: 30px 15px;
     .image-gallery {
-      .title{
+      .title {
         font-size: 2rem;
       }
       .large-image {
@@ -463,12 +464,13 @@ body {
   }
 }
 
-@media screen and (max-width: 370px){
-  body{
-    .about-product{
-      .shop{
-        .second{
-          i, a{
+@media screen and (max-width: 370px) {
+  body {
+    .about-product {
+      .shop {
+        .second {
+          i,
+          a {
             font-size: 16px;
           }
         }
@@ -570,9 +572,10 @@ body {
           font-size: 18px;
         }
       }
-      .shop{
-        .second{
-          i, a{
+      .shop {
+        .second {
+          i,
+          a {
             font-size: 12px;
           }
         }
