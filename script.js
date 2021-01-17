@@ -9,7 +9,10 @@ const bars = document.querySelectorAll(".burger div");
 const homePage = document.querySelector("#home");
 const productBtn = document.querySelector(".product-btn")
 const products = document.querySelectorAll(".product");
+const offer = document.querySelector(".discount");
+const closeBtn = document.querySelector(".close-btn");
 let loaded = false;
+let scrolled = false;
 
 // Main Function
 const main = (e) => {
@@ -38,6 +41,19 @@ const main = (e) => {
 
     // Calling functions
     gsapAnimations();
+
+    // prikaze naj se popust
+    const offerpopup = () => {
+        if (window.scrollY > 350 && scrolled === false){
+            offer.style.transform = "translateY(0)";
+            scrolled = true;
+        }
+    }
+
+    window.addEventListener("scroll", offerpopup);
+    closeBtn.addEventListener("click", () => {
+        offer.style.transform = "translateY(100%)";
+    });
 }
 
 
