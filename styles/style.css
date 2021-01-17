@@ -225,7 +225,7 @@ body {
 }
 
 #products {
-  background: #d6c6bb;
+  background: #f0ebe7;
   padding: 10vh 5em;
   display: -ms-grid;
   display: grid;
@@ -258,7 +258,7 @@ body {
 }
 
 #products .product img {
-  border: 2px black solid;
+  border: 1px black solid;
   border-radius: 3px;
 }
 
@@ -367,9 +367,25 @@ body {
     width: 350px;
     height: 438px;
   }
+  #products .standing a {
+    opacity: 1;
+    height: 100px;
+    top: 0;
+    font-size: 1.75rem;
+  }
   #products .lying * {
     width: 450px;
     height: 338px;
+  }
+  #products .lying a {
+    opacity: 1;
+    height: 100px;
+    top: 0;
+    font-size: 1.75rem;
+    color: black;
+    background: none;
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
   }
 }
 

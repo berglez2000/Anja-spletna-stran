@@ -26,12 +26,9 @@ body {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      img.lying {
-        width: 750px;
-        height: 563px;
-      }
-      img.standing {
-        height: 600px;
+      img{
+        max-height: 600px;
+        max-width: 750px;
       }
       i {
         cursor: pointer;
@@ -296,7 +293,7 @@ body {
         .second {
           a,
           i {
-            font-size: 28px;
+            font-size: 1.75rem;
           }
         }
       }
@@ -416,6 +413,7 @@ body {
         }
       }
       .shop {
+        flex-direction: column;
         .first {
           h3 {
             font-size: 1.75rem;
@@ -491,11 +489,6 @@ body {
         font-size: 2rem;
       }
     }
-    .about-product {
-      .shop {
-        flex-direction: column;
-      }
-    }
   }
 }
 
@@ -542,8 +535,8 @@ body {
           }
         }
         .second {
-          a {
-            font-size: 16px;
+          a, i {
+            font-size: 18px;
           }
         }
       }
@@ -553,9 +546,13 @@ body {
 
 @media screen and (max-width: 450px) {
   body {
+    padding: 10px 15px;
     .image-gallery {
       .title {
         font-size: 2rem;
+      }
+      .large-image{
+        align-items: center;
       }
     }
     .about-product {
@@ -584,6 +581,7 @@ body {
           h3 {
             font-size: 1.75rem;
             text-align: center;
+            margin: 10px 0;
           }
           li {
             margin: 3px 0;
@@ -608,7 +606,6 @@ body {
         .second {
           i,
           a {
-            font-size: 20px;
             margin: 5px 0;
           }
         }
@@ -666,9 +663,19 @@ body {
   }
 }
 
+@media screen and (max-width: 365px){
+  body{
+    .about-product{
+      .shop{
+        padding: 10px 0;
+        
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 355px) {
   body {
-    padding: 10px 15px;
     .image-gallery {
       .title {
         font-size: 1.75rem;
@@ -711,7 +718,7 @@ body {
           .colors {
             .color {
               p {
-                font-size: 22px;
+                font-size: 20px;
               }
             }
           }
@@ -748,6 +755,23 @@ body {
         .second {
           a {
             font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 315px){
+  body{
+    .about-product{
+      .shop{
+        .first{h3{
+          font-size: 1.5rem;
+        }}
+        .second{
+          a, i{
+            font-size: 14px;
           }
         }
       }
@@ -810,6 +834,17 @@ body {
           h3 {
             font-size: 1.75rem;
           }
+          li{
+            font-size: 16px;
+            strong{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .price-sect{
+        .price{
+          font-size: 2.25rem;
         }
       }
       .shop {
@@ -819,8 +854,8 @@ body {
           }
         }
         .second {
-          i {
-            display: none;
+          i, a {
+            font-size: 12px;
           }
         }
       }

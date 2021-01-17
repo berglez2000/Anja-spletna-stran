@@ -342,9 +342,15 @@ body .about-product .shop section a:hover {
     margin: 20px 0;
     font-size: 3rem;
   }
+  body .image-gallery .large-image {
+    height: 675px;
+  }
   body .image-gallery .large-image img {
     max-width: 900px;
     max-height: 675px;
+  }
+  body .image-gallery .large-image i {
+    height: 675px;
   }
   body .image-gallery .small-images {
     -ms-flex-wrap: wrap;
@@ -444,6 +450,9 @@ body .about-product .shop section a:hover {
     max-height: 600px;
     max-width: 800px;
   }
+  body .image-gallery .large-image i {
+    height: 600px;
+  }
   body .about-product {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -514,7 +523,6 @@ body .about-product .shop section a:hover {
     max-width: 750px;
     max-height: 600px;
   }
-  body .about-product .checks .check i,
   body .about-product .checks .check p {
     font-size: 1.25rem;
   }
@@ -539,6 +547,12 @@ body .about-product .shop section a:hover {
   }
   body .about-product .product-description p {
     font-size: 26px;
+  }
+  body .about-product .shop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body .about-product .shop .first h3 {
     font-size: 1.75rem;
@@ -590,12 +604,6 @@ body .about-product .shop section a:hover {
   }
   body .about-product .checks .check p {
     font-size: 22px;
-  }
-  body .about-product .shop {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   body .about-product .shop .first h3 {
     font-size: 2rem;
@@ -679,9 +687,15 @@ body .about-product .shop section a:hover {
     width: 26px;
     height: 26px;
   }
+  body .about-product .shop {
+    padding: 10px 0;
+  }
+  body .about-product .shop .first h3 {
+    font-size: 1.9rem;
+  }
   body .about-product .shop .second i,
   body .about-product .shop .second a {
-    font-size: 20px;
+    font-size: 18px;
     margin: 5px 0;
   }
 }
@@ -711,10 +725,10 @@ body .about-product .shop section a:hover {
     font-size: 2.5rem;
   }
   body .about-product .shop .first h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   body .about-product .shop .second a {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -781,8 +795,8 @@ body .about-product .shop section a:hover {
   body .about-product .shop .first h3 {
     font-size: 1.25rem;
   }
-  body .about-product .shop .second i {
-    display: none;
+  body .about-product .shop .second i, body .about-product .shop .second a {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

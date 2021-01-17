@@ -1,5 +1,5 @@
 #products {
-  background: rgb(214, 198, 187);
+  background: rgb(240, 235, 231);
   padding: 10vh 5em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     img {
-      border: 2px black solid;
+      border: 1px black solid;
       border-radius: 3px;
     }
     a {
@@ -141,12 +141,27 @@
         width: 350px;
         height: 438px;
       }
+      a{
+        opacity: 1;
+        height: 100px;
+        top: 0;
+        font-size: 1.75rem;
+      }
     }
 
     .lying {
       * {
         width: 450px;
         height: 338px;
+      }
+      a{
+        opacity: 1;
+        height: 100px;
+        top: 0;
+        font-size: 1.75rem;
+        color: black;
+        background: none;
+        transform: translateY(-15%);
       }
     }
   }

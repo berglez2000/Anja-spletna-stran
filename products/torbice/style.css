@@ -775,8 +775,8 @@ body .about-product .shop section a:hover {
   body .about-product .shop .first h3 {
     font-size: 1.25rem;
   }
-  body .about-product .shop .second i {
-    display: none;
+  body .about-product .shop .second i, body .about-product .shop .second a {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

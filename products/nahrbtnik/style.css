@@ -44,13 +44,9 @@ body .image-gallery .large-image {
           align-items: flex-end;
 }
 
-body .image-gallery .large-image img.lying {
-  width: 750px;
-  height: 563px;
-}
-
-body .image-gallery .large-image img.standing {
-  height: 600px;
+body .image-gallery .large-image img {
+  max-height: 600px;
+  max-width: 750px;
 }
 
 body .image-gallery .large-image i {
@@ -472,7 +468,7 @@ body .about-product .shop section a:hover {
   }
   body .about-product .shop .second a,
   body .about-product .shop .second i {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 }
 
@@ -568,6 +564,12 @@ body .about-product .shop section a:hover {
   body .about-product .product-description p {
     font-size: 26px;
   }
+  body .about-product .shop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   body .about-product .shop .first h3 {
     font-size: 1.75rem;
   }
@@ -618,12 +620,6 @@ body .about-product .shop section a:hover {
   body .image-gallery .title {
     font-size: 2rem;
   }
-  body .about-product .shop {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 @media screen and (max-width: 515px) {
@@ -657,14 +653,22 @@ body .about-product .shop section a:hover {
   body .about-product .shop section h3 {
     font-size: 18px;
   }
-  body .about-product .shop .second a {
-    font-size: 16px;
+  body .about-product .shop .second a, body .about-product .shop .second i {
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 450px) {
+  body {
+    padding: 10px 15px;
+  }
   body .image-gallery .title {
     font-size: 2rem;
+  }
+  body .image-gallery .large-image {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body .about-product .color-sizes {
     -webkit-box-orient: vertical;
@@ -692,6 +696,7 @@ body .about-product .shop section a:hover {
   body .about-product .color-sizes .sizes h3 {
     font-size: 1.75rem;
     text-align: center;
+    margin: 10px 0;
   }
   body .about-product .color-sizes .sizes li {
     margin: 3px 0;
@@ -708,7 +713,6 @@ body .about-product .shop section a:hover {
   }
   body .about-product .shop .second i,
   body .about-product .shop .second a {
-    font-size: 20px;
     margin: 5px 0;
   }
 }
@@ -755,10 +759,13 @@ body .about-product .shop section a:hover {
   }
 }
 
-@media screen and (max-width: 355px) {
-  body {
-    padding: 10px 15px;
+@media screen and (max-width: 365px) {
+  body .about-product .shop {
+    padding: 10px 0;
   }
+}
+
+@media screen and (max-width: 355px) {
   body .image-gallery .title {
     font-size: 1.75rem;
   }
@@ -790,7 +797,7 @@ body .about-product .shop section a:hover {
     font-size: 2rem;
   }
   body .about-product .color-sizes .colors-section .colors .color p {
-    font-size: 22px;
+    font-size: 20px;
   }
   body .about-product .color-sizes .sizes h3 {
     font-size: 2rem;
@@ -813,6 +820,15 @@ body .about-product .shop section a:hover {
   }
   body .about-product .shop .second a {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  body .about-product .shop .first h3 {
+    font-size: 1.5rem;
+  }
+  body .about-product .shop .second a, body .about-product .shop .second i {
+    font-size: 14px;
   }
 }
 
@@ -855,11 +871,20 @@ body .about-product .shop section a:hover {
   body .about-product .color-sizes .sizes h3 {
     font-size: 1.75rem;
   }
+  body .about-product .color-sizes .sizes li {
+    font-size: 16px;
+  }
+  body .about-product .color-sizes .sizes li strong {
+    font-size: 18px;
+  }
+  body .about-product .price-sect .price {
+    font-size: 2.25rem;
+  }
   body .about-product .shop .first h3 {
     font-size: 1.25rem;
   }
-  body .about-product .shop .second i {
-    display: none;
+  body .about-product .shop .second i, body .about-product .shop .second a {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

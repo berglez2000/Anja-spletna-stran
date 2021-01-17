@@ -25,7 +25,7 @@ body {
       align-items: flex-end;
       img {
         max-height: 600px;
-        max-width: 700px;
+        max-width: 800px;
       }
       i {
         cursor: pointer;
@@ -192,6 +192,17 @@ body {
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 20px;
+        font-size: 2.25rem;
+      }
+      .large-image{
+        height: 675px;
+        img{
+          max-width: 900px;
+          max-height: 675px;
+        }
+        i{
+          height: 675px;
+        }
       }
     }
     .about-product {
@@ -271,6 +282,15 @@ body {
         text-transform: uppercase;
         margin-bottom: 30px;
       }
+      .large-image{
+        img{
+          max-height: 600px;
+          max-width: 800px;
+        }
+        i{
+          height: 600px;
+        }
+      }
       .small-images {
         margin-bottom: 30px;
       }
@@ -292,6 +312,19 @@ body {
       .shop {
         height: auto;
         width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    .image-gallery {
+      .large-image {
+        img {
+          max-width: 750px;
+          max-height: 600px;
+        }
       }
     }
   }
@@ -326,13 +359,13 @@ body {
   body {
     .image-gallery {
       .large-image {
-        height: 450px;
+        height: 400px;
         img {
           max-width: 500px;
-          max-height: 450px;
+          max-height: 400px;
         }
         i {
-          height: 450px;
+          height: 400px;
         }
       }
       .small-images {
@@ -408,6 +441,9 @@ body {
   body {
     padding: 30px 15px;
     .image-gallery {
+      .title{
+        font-size: 1.75rem;
+      }
       .large-image {
         height: 400px;
         align-items: center;
@@ -574,6 +610,13 @@ body {
         }
         p {
           font-size: 18px;
+        }
+      }
+      .shop{
+        .second{
+          i, a{
+            font-size: 12px;
+          }
         }
       }
     }

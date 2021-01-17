@@ -219,7 +219,7 @@ body {
           }
         }
         .second {
-          a {
+          a, i {
             font-size: 1.75rem;
           }
         }
@@ -343,9 +343,6 @@ body {
         }
       }
       .shop {
-        a {
-          font-size: 16px;
-        }
         display: flex;
         justify-content: center;
         align-items: center;
@@ -538,6 +535,13 @@ body {
         }
         p {
           font-size: 18px;
+        }
+      }
+      .shop{
+        .second{
+          i, a{
+            font-size: 12px;
+          }
         }
       }
     }

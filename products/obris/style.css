@@ -45,7 +45,7 @@ body .image-gallery .large-image {
 
 body .image-gallery .large-image img {
   max-height: 600px;
-  max-width: 700px;
+  max-width: 800px;
 }
 
 body .image-gallery .large-image i {
@@ -321,6 +321,17 @@ body .about-product .shop section a:hover {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 2.25rem;
+  }
+  body .image-gallery .large-image {
+    height: 675px;
+  }
+  body .image-gallery .large-image img {
+    max-width: 900px;
+    max-height: 675px;
+  }
+  body .image-gallery .large-image i {
+    height: 675px;
   }
   body .about-product {
     height: -webkit-fit-content;
@@ -419,6 +430,13 @@ body .about-product .shop section a:hover {
     text-transform: uppercase;
     margin-bottom: 30px;
   }
+  body .image-gallery .large-image img {
+    max-height: 600px;
+    max-width: 800px;
+  }
+  body .image-gallery .large-image i {
+    height: 600px;
+  }
   body .image-gallery .small-images {
     margin-bottom: 30px;
   }
@@ -438,6 +456,13 @@ body .about-product .shop section a:hover {
   body .about-product .shop {
     height: auto;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body .image-gallery .large-image img {
+    max-width: 750px;
+    max-height: 600px;
   }
 }
 
@@ -471,14 +496,14 @@ body .about-product .shop section a:hover {
 
 @media screen and (max-width: 615px) {
   body .image-gallery .large-image {
-    height: 450px;
+    height: 400px;
   }
   body .image-gallery .large-image img {
     max-width: 500px;
-    max-height: 450px;
+    max-height: 400px;
   }
   body .image-gallery .large-image i {
-    height: 450px;
+    height: 400px;
   }
   body .image-gallery .small-images img.standing {
     max-height: 90px;
@@ -551,6 +576,9 @@ body .about-product .shop section a:hover {
 @media screen and (max-width: 430px) {
   body {
     padding: 30px 15px;
+  }
+  body .image-gallery .title {
+    font-size: 1.75rem;
   }
   body .image-gallery .large-image {
     height: 400px;
@@ -679,6 +707,9 @@ body .about-product .shop section a:hover {
   }
   body .about-product .price-sect p {
     font-size: 18px;
+  }
+  body .about-product .shop .second i, body .about-product .shop .second a {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
